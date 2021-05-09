@@ -1,0 +1,169 @@
+.button-zoom-out {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.button-zoom-out button {
+  width: 90%;
+}
+
+.button-zoom-out:focus, .button-zoom-out:hover {
+  animation: zoomOut 1s infinite;
+}
+
+.btn-icon {
+  padding: 0 0.5em;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(1.1);
+  }
+}
+.bk-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.bk-black-white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.bk-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.bk-black-white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.slider-indicator__dots button {
+  border: 3px solid #757575 !important;
+  border-radius: 50% !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+.slider__text-horizontal {
+  color: white;
+  display: inline-block;
+  padding: 10em;
+  vertical-align: top;
+  width: 50%;
+}
+
+.slider__text-horizontal--title {
+  font-size: 2.5rem;
+}
+
+.slider__text-horizontal--paragraph {
+  font-size: 1.2rem;
+}
+
+.slider__text-vertical--title {
+  text-align: center;
+  margin: 0.4em;
+}
+
+.slider__text-vertical--paragraph {
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.slider__text-vertical--line {
+  outline: 2px solid #C4C4C4;
+}
+
+.slider-many-items {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.slider-many-items--item {
+  margin: 0em 4em;
+  margin-bottom: 4em;
+}
+
+.slider__img {
+  display: inline-block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  margin-bottom: 3em;
+}
+
+.nav-fixed {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+}
+
+.title-section {
+  text-align: center;
+  margin: 6em 1em;
+}
+
+.title-section__title {
+  display: inline-block;
+}
+
+.title-section__title--bar {
+  outline: 1px solid;
+}
+
+.quotation {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+.floating-wpp-button {
+  background-color: transparent !important;
+}
+
+.header {
+  background: #020024;
+  background: linear-gradient(180deg, #020024 0%, #4d4d4d 27%, #757575 50%, #444444 72%, black 100%);
+}
+
+.nav-item a {
+  color: white;
+}
+
+.navbar-nav {
+  width: 80%;
+}
+
+.navbar--separator {
+  color: white;
+  margin: 1em;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+/*# sourceMappingURL=output.css.map */

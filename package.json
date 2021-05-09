@@ -1,0 +1,19 @@
+{
+  "name": "perforaciones-horizontales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Estrella-BF/perforaciones-horizontales.git"
+  },
+  "author": "Redsco Perú",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Estrella-BF/perforaciones-horizontales/issues"
+  },
+  "homepage": "https://gitlab.com/Estrella-BF/perforaciones-horizontales#readme"
+}

@@ -1,0 +1,28 @@
+.button-zoom-out {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+
+  button {
+    width: 90%;
+  }
+}
+
+.button-zoom-out:focus, .button-zoom-out:hover {
+  animation: zoomOut 1s infinite;
+}
+
+.btn-icon {
+  padding: 0 0.5em;
+}
+
+@keyframes zoomOut {
+  from {
+    // top: 0px;
+  }
+  to {
+    // top: 200px;
+    transform: scale(1.1);
+  }
+}
+

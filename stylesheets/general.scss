@@ -1,0 +1,39 @@
+footer {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  margin-bottom: 3em;
+}
+
+.nav-fixed {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+}
+
+.title-section {
+  text-align: center;
+  margin: 6em 1em;
+}
+
+.title-section__title{
+  display: inline-block;
+}
+
+.title-section__title--bar {
+  outline: 1px solid;
+}
+
+.quotation {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+.floating-wpp-button {
+  background-color: transparent !important;
+}

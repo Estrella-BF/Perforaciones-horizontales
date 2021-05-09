@@ -1,0 +1,60 @@
+@import './colors.scss';
+
+.slider-indicator__dots {
+  button {
+    border: 3px solid $dark-gray !important;
+    border-radius: 50% !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+}
+
+.slider__text-horizontal {
+  color: white;
+  display: inline-block;
+  padding: 10em;
+  vertical-align: top;
+  width: 50%;
+}
+
+.slider__text-horizontal--title {
+  font-size: 2.5rem;
+}
+
+.slider__text-horizontal--paragraph {
+  font-size: 1.2rem;
+}
+
+.slider__text-vertical {
+
+}
+
+.slider__text-vertical--title {
+  text-align: center;
+  margin: 0.4em;
+}
+
+.slider__text-vertical--paragraph {
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.slider__text-vertical--line {
+  outline: 2px solid $gray;
+}
+
+.slider-many-items {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.slider-many-items--item {
+  margin: 0em 4em;
+  margin-bottom: 4em;
+}
+
+.slider__img {
+  display: inline-block;
+}
