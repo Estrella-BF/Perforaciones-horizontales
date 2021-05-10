@@ -18,7 +18,7 @@ nav {
   }
 }
 
-.only-desktop {
+.only-mobile {
   @media (min-width: 768px) {
     display: none;
   }
@@ -66,4 +66,14 @@ nav {
 
 .floating-wpp-button {
   background-color: transparent !important;
+}
+
+// Services
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__description {
+  width: 30%;
 }
