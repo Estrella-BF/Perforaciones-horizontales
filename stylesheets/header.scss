@@ -13,6 +13,15 @@
   width: 80%;
 }
 
+.nav-bar__text {
+  color: white;
+  margin-top: 1em; 
+
+  p {
+    margin: 0;
+  }
+}
+
 .navbar--separator {
   color: white;
   margin: 1em;
@@ -21,4 +30,16 @@
 .nav-link:focus, .nav-link:hover {
   color: white;    
   font-weight: bolder;
+}
+
+.navbar>.container-fluid {
+  @media (min-width: 768px) {
+    align-items: baseline;
+  }
+}
+
+.nav-fixed {
+  position: fixed;
+  background-color: black;
+  width: 100%;
 }

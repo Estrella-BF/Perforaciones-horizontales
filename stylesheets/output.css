@@ -153,12 +153,6 @@ nav {
   display: block !important;
 }
 
-.nav-fixed {
-  position: fixed;
-  background-color: black;
-  width: 100%;
-}
-
 .title-section {
   text-align: center;
   margin: 6em 1em;
@@ -197,6 +191,14 @@ nav {
   width: 80%;
 }
 
+.nav-bar__text {
+  color: white;
+  margin-top: 1em;
+}
+.nav-bar__text p {
+  margin: 0;
+}
+
 .navbar--separator {
   color: white;
   margin: 1em;
@@ -205,6 +207,18 @@ nav {
 .nav-link:focus, .nav-link:hover {
   color: white;
   font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container-fluid {
+    align-items: baseline;
+  }
+}
+
+.nav-fixed {
+  position: fixed;
+  background-color: black;
+  width: 100%;
 }
 
 .w-10 {
