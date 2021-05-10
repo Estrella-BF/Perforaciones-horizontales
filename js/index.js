@@ -23,8 +23,8 @@ function quotation() {
 }
 
 function openQuotationForm() {
+  window.scrollTo(0, positionQuotationContainer);
   quotation();
-  window.scrollTo(0, positionQuotationContainer)
 }
 
   /*
