@@ -7,6 +7,14 @@ nav {
   margin-bottom: 3em;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
 .nav-fixed {
   position: fixed;
   background-color: black;

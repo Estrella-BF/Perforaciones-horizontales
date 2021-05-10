@@ -436,9 +436,22 @@
     </div>
 
     <div class="w-100 text-center pt-5 pb-5">
-      <button class="btn btn-lg bk-black-white button-zoom-out d-inline-block">Cotiza ahora
+      <button 
+      id="btn-quotation"
+      class="btn btn-lg bk-black-white button-zoom-out d-inline-block"
+      onclick="quotation()"
+      >Cotizar ahora
       </button>
     </div>
+
+    <div id="form-quotation" class="hidden">
+      <div>
+        <div class="w-100 text-right">
+          <button class="no-button" type="button">X</button>
+        </div>
+      </div>
+    </div>
+  
   </div>
   <!--End Quotation-->
 

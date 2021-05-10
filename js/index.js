@@ -1,6 +1,7 @@
+const buttonQuotation = document.getElementById('btn-quotation');
+const formQuotation = document.getElementById('form-quotation');
 const main = document.getElementById('main');
 const mainPosition = main.offsetTop;
-
 const navMenu = document.getElementById('nav-menu');
 
 $('#WAButton').floatingWhatsApp({
@@ -13,6 +14,11 @@ $('#WAButton').floatingWhatsApp({
   //backgroundColor: 'crimson', //Custom background button color
   position: "right" //Position: left | right
 });
+
+function quotation() {
+  buttonQuotation.classList.toggle("hidden");
+  formQuotation.classList.toggle("show");
+}
 
   /*
   Verificará la posición del scroll del navegador, y pasará como

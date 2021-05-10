@@ -16,6 +16,11 @@
   padding: 0 0.5em;
 }
 
+.no-button {
+  background-color: transparent;
+  border: none;
+}
+
 @keyframes zoomOut {
   from {
     // top: 0px;
