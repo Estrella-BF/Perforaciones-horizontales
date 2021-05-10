@@ -84,6 +84,7 @@
 }
 @media (max-width: 767.98px) {
   .slider__text-horizontal {
+    margin-bottom: 2em;
     padding: 1em;
     width: 100%;
   }
