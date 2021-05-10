@@ -221,12 +221,28 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 767.98px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
 .w-10 {
   width: 10%;
 }
 
 .w-20 {
   width: 20%;
+}
+
+.w-40 {
+  width: 40%;
 }
 
 /*# sourceMappingURL=output.css.map */

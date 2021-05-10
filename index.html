@@ -20,10 +20,10 @@
   
   <!--Header-->
   <header class="header">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg" id="nav-menu">
+    <!--Navbar Desktop-->
+    <nav class="navbar navbar-expand-lg navbar-desktop" id="nav-menu">
       <div class="container-fluid">
-        <a class="navbar-brand w-10 " href="#">
+        <a class="navbar-brand w-10" href="#">
           <div class="bk-white">
             <img src="./assets/logo1.png" class="img-fluid">
           </div>
@@ -84,7 +84,51 @@
         </div>
       </div>
     </nav>
-    <!--Navbar fin-->
+    <!--Navbar Desktop fin-->
+
+    <!--Navbar mobile-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
+      <div class="container-fluid">
+        <a class="navbar-brand w-40" href="#">
+          <img src="./assets/logo1.png" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empresa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctenos</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#">Cotiza en un click</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!--Navbar mobile fin-->
 
     <!--Slider-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
