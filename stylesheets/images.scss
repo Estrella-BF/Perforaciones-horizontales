@@ -15,14 +15,29 @@
   padding: 10em;
   vertical-align: top;
   width: 50%;
+
+  @media (max-width: 767.98px) {
+    padding: 1em;
+    width: 100%;
+  }
 }
 
 .slider__text-horizontal--title {
   font-size: 2.5rem;
+
+  @media (max-width: 767.98px) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .slider__text-horizontal--paragraph {
   font-size: 1.2rem;
+
+  @media (max-width: 767.98px) {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 .slider__text-vertical {

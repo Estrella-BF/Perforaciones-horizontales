@@ -43,15 +43,3 @@
   background-color: black;
   width: 100%;
 }
-
-.navbar-desktop {
-  @media (max-width: 767.98px) {
-    display: none;
-  }
-}
-
-.navbar-mobile {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}

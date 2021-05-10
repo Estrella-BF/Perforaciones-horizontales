@@ -12,6 +12,18 @@ nav {
   margin-bottom: 3em;
 }
 
+.only-desktop {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+}
+
+.only-desktop {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .form {
   -webkit-box-shadow: -2px -2px 10px 4px rgba(0,0,0,0.04); 
   box-shadow: -2px -2px 10px 4px rgba(0,0,0,0.04);
