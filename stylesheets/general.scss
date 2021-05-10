@@ -79,5 +79,21 @@ nav {
 }
 
 .services__description {
+  text-align: center; 
+  margin-bottom: 1em;
   width: 30%;
 }
+
+// Clients
+.horizontal-scroll {
+  overflow: auto;
+  white-space: nowrap;
+
+  .horizontal-scroll__picture {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em;
+    width: 36%;
+  }
+}
+
