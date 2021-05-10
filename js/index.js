@@ -1,8 +1,10 @@
 const buttonQuotation = document.getElementById('btn-quotation');
 const formQuotation = document.getElementById('form-quotation');
+const quotationContainer = document.getElementById('quotation');
 const main = document.getElementById('main');
 const mainPosition = main.offsetTop;
 const navMenu = document.getElementById('nav-menu');
+const positionQuotationContainer = quotationContainer.offsetTop;
 
 $('#WAButton').floatingWhatsApp({
   phone: '51990417986', //WhatsApp Business phone number
@@ -18,6 +20,11 @@ $('#WAButton').floatingWhatsApp({
 function quotation() {
   buttonQuotation.classList.toggle("hidden");
   formQuotation.classList.toggle("show");
+}
+
+function openQuotationForm() {
+  quotation();
+  window.scrollTo(0, positionQuotationContainer)
 }
 
   /*

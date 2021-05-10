@@ -64,7 +64,10 @@
           </ul>
 
           <form class="button-zoom-out">
-            <button class="btn btn-lg bk-white" type="button"> 
+            <button 
+            onclick="openQuotationForm()"
+            class="btn btn-lg bk-white" type="button"
+            > 
               Cotiza en un click
               <i class="btn-icon far fa-file-alt"></i>
             </button>
@@ -435,7 +438,7 @@
 
 
   <!--Quotation-->
-  <div class="quotation">
+  <div class="quotation" id="quotation">
     <h4>Cotiza tu Proyecto</h4>
     <p>Cuéntanos acerca de tu proyecto.
       Realiza la solicitud de tu cotización en menos de 3 minutos y en un sólo click.</p>
