@@ -265,6 +265,24 @@ nav {
   width: 36%;
 }
 
+.contact-us-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social-networks {
+  text-align: center;
+  width: 100%;
+}
+.social-networks .social-networks__icons {
+  display: inline-block;
+  width: 50%;
+}
+
 .header {
   background: #020024;
   background: linear-gradient(180deg, #020024 0%, #4d4d4d 27%, #757575 50%, #444444 72%, black 100%);

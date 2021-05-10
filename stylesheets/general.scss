@@ -120,3 +120,24 @@ nav {
   }
 }
 
+// Contact us
+
+.contact-us-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social-networks {
+  text-align: center;
+  width: 100%;
+
+  .social-networks__icons {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
