@@ -8,6 +8,24 @@ input, select {
   margin-left: 1em !important;
 }
 
+select {
+  width: 20% !important;
+
+  // mobile
+  @media (max-width: 767.98px) {
+    width: 90% !important;
+  }
+}
+
+input {
+  width: 50% !important;
+
+  // mobile
+  @media (max-width: 767.98px) {
+    width: 90% !important;
+  }
+}
+
 nav {
   margin-bottom: 3em;
 }
@@ -29,6 +47,10 @@ nav {
   box-shadow: -2px -2px 10px 4px rgba(0,0,0,0.04);
   margin: 2em 0;
   padding: 2em 8em;
+
+  @media (max-width: 767.98px) {
+    padding: 1em;
+  }
 
   div {
     margin-bottom: 2em;
