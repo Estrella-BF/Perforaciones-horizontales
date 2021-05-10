@@ -3,6 +3,11 @@
   justify-content: center;
   width: 20%;
 }
+@media (max-width: 767.98px) {
+  .button-zoom-out {
+    width: 100%;
+  }
+}
 .button-zoom-out button {
   width: 90%;
 }
@@ -204,7 +209,7 @@ nav {
 }
 
 .quotation {
-  background-color: black;
+  background: linear-gradient(180deg, black 0%, #484848 44%, #444444 70%, black 100%);
   color: white;
   text-align: center;
   padding: 2em;
