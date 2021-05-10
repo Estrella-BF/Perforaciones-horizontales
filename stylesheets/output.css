@@ -251,6 +251,15 @@ nav {
   width: 100%;
 }
 
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-menu__icon--mobile {
+  color: white !important;
+  font-size: 1.8rem;
+}
+
 .w-10 {
   width: 10%;
 }
