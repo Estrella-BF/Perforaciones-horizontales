@@ -3,7 +3,8 @@ const formQuotation = document.getElementById('form-quotation');
 const quotationContainer = document.getElementById('quotation');
 const main = document.getElementById('main');
 const mainPosition = main.offsetTop;
-const navMenu = document.getElementById('nav-menu');
+const navMenuMobile = document.getElementById('nav-menu-mobile');
+const navMenuMobileText = document.getElementById('nav-text-mobile');
 const positionQuotationContainer = quotationContainer.offsetTop;
 
 $('#WAButton').floatingWhatsApp({
@@ -31,25 +32,27 @@ function openQuotationForm() {
   Verificará la posición del scroll del navegador, y pasará como
   parámetro el scroll del elemento
   */
-/*   const setClassScrollPosition = function (scrollPosition) {
+  const setClassScrollPosition = function (scrollPosition) {
     if (scrollPosition > mainPosition) {
-      navMenu.classList.add("nav-fixed");
+      navMenuMobile.classList.add("nav-fixed");
+      navMenuMobileText.classList.add("hidden");
     } else {
-      navMenu.classList.remove("nav-fixed");
+      navMenuMobile.classList.remove("nav-fixed");
+      navMenuMobileText.classList.remove("hidden");
     }
-  } */
+  }
 
   /*
   Cuando inicializa, se verifica la posición del scroll en el navegador
   */
-/*   const windowScrollCurrentPosition  = window.pageYOffset || document.documentElement.scrollTop;
+  const windowScrollCurrentPosition  = window.pageYOffset || document.documentElement.scrollTop;
   setClassScrollPosition(windowScrollCurrentPosition);
-   */
+  
 
   /*
   Cuando se hace scroll al naveador, se verifica la posición del scroll en el navegador
   */
-/*   window.addEventListener("scroll", (event) => {
+  window.addEventListener("scroll", (event) => {
     let scrollPosition = this.scrollY;
     setClassScrollPosition(scrollPosition);
-  }); */
+  });
