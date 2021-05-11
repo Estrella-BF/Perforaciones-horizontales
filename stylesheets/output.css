@@ -39,6 +39,10 @@
     transform: scale(1.1);
   }
 }
+.color-black {
+  color: black !important;
+}
+
 .bk-white {
   background-color: white;
 }
@@ -54,6 +58,10 @@
 
 .bk-transparent {
   background-color: transparent;
+}
+
+.color-black {
+  color: black !important;
 }
 
 .bk-white {
