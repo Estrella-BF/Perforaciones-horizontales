@@ -73,6 +73,13 @@ nav {
   display: block !important;
 }
 
+.height-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .title-section {
   text-align: center;
   margin: 6em 1em;
@@ -150,14 +157,6 @@ nav {
 }
 
 // Company
-
-.company {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .company-description {
   text-align: center;
 }
@@ -175,9 +174,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 1.3em;
+  height: 4em;
 
   i {
     font-size: 1.5rem;
   }
+}
+
+.mission-and-vision {
+  margin: 5em 0;
 }
