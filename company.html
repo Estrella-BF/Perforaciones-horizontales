@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+  <!--Floating WhatsApp javascript-->
+  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+  <link rel="stylesheet" href="./stylesheets/output.css">
+  <script src="https://kit.fontawesome.com/d04b664777.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <!--Navbar Desktop-->
+      <nav class="navbar navbar-expand-lg only-desktop"">
+        <div class="container-fluid">
+          <a class="navbar-brand w-10" href="#">
+            <div class="bk-white">
+              <img src="./assets/logo1.png" class="img-fluid">
+            </div>
+        
+            <div class="nav-bar__text">
+              <p>(+51 ) 983558207 </p>
+              <p>Avenida test</p>
+              <p>comercial@perforacionesperu.pe</p>
+            </div>
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Principal</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" href="./company.html">Empresa</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <div class="navbar--separator">|</div>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <div class="navbar--separator">|</div>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contáctenos</a>
+              </li>
+
+            </ul>
+
+            <form class="button-zoom-out">
+              <button 
+              onclick="openQuotationForm()"
+              class="btn btn-lg bk-white" type="button"
+              > 
+                Cotiza en un click
+              <!--  <i class="btn-icon far fa-file-alt"></i> -->
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar Desktop fin-->
+
+      <!--Navbar mobile-->
+      <nav class="navbar navbar-expand-lg only-mobile mb-2" id="nav-menu-mobile">
+        <div class="container-fluid">
+          <a class="navbar-brand w-40 bk-white" href="#">
+            <img src="./assets/logo1.png" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-menu__icon--mobile fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
+              <li class="nav-item">
+              <i class="fas fa-home color-white"></i>
+                <a class="nav-link d-inline-block p-2" aria-current="page" href="#">Principal</a>
+              </li>
+              <li class="nav-item">
+              <i class="fas fa-building color-white"></i>
+                <a class="nav-link d-inline-block p-2 fw-bolder" href="./company.html">Empresa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <i class="fas fa-briefcase color-white"></i>
+                <a class="nav-link dropdown-toggle d-inline-block p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-newspaper color-white"></i>
+                <a class="nav-link d-inline-block p-2" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+              <i class="fas fa-headset color-white"></i>
+                <a class="nav-link d-inline-block p-2" href="#">Contáctenos</a>
+              </li>
+              <li class="nav-item fw-bold">
+                <i class="fas fa-file-alt color-white"></i>
+                <a 
+                onclick="quotation()"
+                class="nav-link d-inline-block p-2" href="#quotation"
+                >Cotiza en un click</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nav-bar__text" id="nav-text-mobile">
+          <p>(+51 ) 983558207 </p>
+          <p>Avenida test</p>
+          <p>comercial@perforacionesperu.pe</p>
+        </div>
+
+      </nav>
+      <!--Navbar mobile fin-->
+
+      <!--Slider-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div>
+    
+              <div class="slider__text-horizontal only-desktop">
+                <h4 class="slider__text-horizontal--title">Título anuncio 1</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+
+              <div class="slider__img">
+                <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="slider__text-horizontal only-mobile">
+                <h4 class="slider__text-horizontal--title">Título anuncio 1</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div>
+    
+              <div class="slider__text-horizontal only-desktop">
+                <h4 class="slider__text-horizontal--title">Título anuncio 2</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+        
+              <div class="slider__img">
+                <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="slider__text-horizontal only-mobile">
+                <h4 class="slider__text-horizontal--title">Título anuncio 1</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+
+            </div>
+          </div>
+      
+          <div class="carousel-item">
+            <div>
+              <div class="slider__text-horizontal only-desktop">
+                <h4 class="slider__text-horizontal--title">Título anuncio 3</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+    
+              <div class="slider__img">
+                <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="slider__text-horizontal only-mobile">
+                <h4 class="slider__text-horizontal--title">Título anuncio 1</h4>
+                <p class="slider__text-horizontal--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      <!--       
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      -->
+      </div>
+      <!--slider fin-->    
+    </header>
+    <!--Header-->
+
+    <!--Company-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          
+          <div class="title-section">
+            <div class="title-section__title">
+              <h2 class="title-section__title--text">Somos Perforaciones Horizontales</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+          </div>
+          <div>
+            <img src="./assets/banner-blue.png" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Company End-->
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
