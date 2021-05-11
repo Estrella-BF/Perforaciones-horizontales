@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perforaciones Horizontales</title>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" 
@@ -16,7 +17,8 @@
   <link rel="stylesheet" href="./stylesheets/output.css">
   <script src="https://kit.fontawesome.com/d04b664777.js" crossorigin="anonymous"></script>
 </head>
-  <body>
+<body>
+  
     <!--Header-->
     <header class="header">
       
@@ -45,7 +47,7 @@
               </li>
               <div class="navbar--separator">|</div>
               <li class="nav-item">
-                <a class="nav-link fw-bolder">Empresa</a>
+                <a class="nav-link" href="./company.html">Empresa</a>
               </li>
               <div class="navbar--separator">|</div>
               <li class="nav-item dropdown">
@@ -75,13 +77,12 @@
             </ul>
 
             <form class="button-zoom-out">
-              <a
-              class="btn btn-lg bk-white" type="button"
-              href="./quotation.html"
+              <button
+              class="btn btn-lg bk-white fw-bolder" type="button"
               > 
                 Cotiza en un click
               <!--  <i class="btn-icon far fa-file-alt"></i> -->
-              </a>
+              </button>
             </form>
           </div>
         </div>
@@ -101,11 +102,11 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
               <li class="nav-item">
               <i class="fas fa-home color-white"></i>
-                <a class="nav-link d-inline-block p-2" aria-current="page" href="#">Principal</a>
+                <a class="nav-link d-inline-block p-2" aria-current="page" href="./index.html">Principal</a>
               </li>
               <li class="nav-item">
               <i class="fas fa-building color-white"></i>
-                <a class="nav-link d-inline-block p-2 fw-bolder" href="./company.html">Empresa</a>
+                <a class="nav-link d-inline-block p-2" href="./company.html">Empresa</a>
               </li>
               <li class="nav-item dropdown">
                 <i class="fas fa-briefcase color-white"></i>
@@ -131,9 +132,8 @@
               </li>
               <li class="nav-item fw-bold">
                 <i class="fas fa-file-alt color-white"></i>
-                <a 
-                onclick="quotation()"
-                class="nav-link d-inline-block p-2" href="#quotation"
+                <a
+                class="nav-link d-inline-block p-2 fw-bolder"
                 >Cotiza en un click</a>
               </li>
             </ul>
@@ -153,137 +153,102 @@
     </header>
     <!--Header-->
 
-    <!--Company-->
+    <!--Quotation-->
+    <div class="text-center" id="quotation">
+      <h4>Cotiza tu Proyecto</h4>
+      <p>Cuéntanos acerca de tu proyecto.
+        Realiza la solicitud de tu cotización en menos de 3 minutos y en un sólo click.</p>
+    </div>
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          
-          <div class="title-section">
-            <div class="title-section__title">
-              <h2 class="title-section__title--text">Somos Perforaciones Horizontales</h2>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-          <div>
-            <img src="./assets/banner-blue.png" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="height-center">
-            <div class="company-description">
-              <p>Nuestra empresa</p>
-              <p>Años y logros  de la empresa</p>
-              <p>Lo que les caracteriza y valor agregado</p>
-              <p>Diferenciación con la competenciaProtocolos Covid</p>
-              <p>Lo que les caracteriza y valor agregado</p>
-              <p>Diferenciación con la competencia</p>
-              <p>Protocolos Covid</p>
-              
-            </div>
-            
+        <div class="col">
+      
+          <div id="form-quotation" class="">
             <div>
 
-              <div class="company-info">
+              <form class="form">
+                <div class="col-md-12">
+                  <label for="validationServer01" class="form-label col-md-2">Servicio a instalar:</label>
+                  <select class="form-select" id="validationServer01" name="" id="">
+                    <option value="">Seleccionar</option>
+                    <option value="">Opción A</option>
+                    <option value="">Opción B</option>
+                  </select>
+                </div>
 
-                <div class="company-info__box">
-                  <p class="company-info__box--text">Protocolo Covid</p>
-                  <i class="fas fa-virus-slash"></i>
+                <div class="col-md-12">
+                  <label for="validationServer02" class="form-label col-md-2">Ubicación del proyecto:</label>
+                  <input type="text" class="form-control" id="validationServer02" value="" required>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="validationServer03" class="form-label">
+                    Google maps de la ubicación del proyecto:
+                  </label>
                 </div>
     
-                <div class="company-info__box">
-                  <p class="company-info__box--text">Normativas de seguridad</p>
-                  <i class="fas fa-file-medical-alt"></i>
+                <div class="col-md-12">
+                  <label for="validationServer04" class="form-label col-md-2">RUC o DNI:</label>
+                  <input type="text" class="form-control" id="validationServer04" value="" required>
                 </div>
     
-              </div>
-
-              <div class="company-info">
-
-                <div class="company-info__box">
-                  <p class="company-info__box--text">Trabajadores experimentados</p>
-                  <i class="fas fa-hard-hat"></i>
+                <div class="col-md-12">
+                  <label for="validationServer05" class="form-label col-md-2">Nombre del contacto:</label>
+                  <input type="text" class="form-control" id="validationServer05" value="" required>
                 </div>
     
-                <div class="company-info__box">
-                  <p class="company-info__box--text">Experiencia</p>
-                  <i class="fas fa-truck-pickup"></i>
+                <div class="col-md-12">
+                  <label for="validationServer06" class="form-label col-md-2">Número del contacto:</label>
+                  <input type="text" class="form-control" id="validationServer06" value="" required>
                 </div>
     
-              </div>
-            </div>
-          </div>
-          
-        </div>
+                <div class="col-md-12">
+                  <label for="validationServer07" class="form-label col-md-2">Correo del contacto:</label>
+                  <input type="text" class="form-control" id="validationServer07" value="" required>
+                </div>
+  <!-- 
+                <div class="col-md-12">
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationServerUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div> -->
 
-      </div>
-    </div>
-    <!--Company End-->
+                <div class="col-12">
+                  <div class="text-center">
+                    <button class="btn bk-black-white button-zoom-out d-inline-block" type="submit">Enviar</button>
+                  </div>
+                </div>
+              </form>
+  <!--             <div class="form">
+                <div>
+                  <label for="install-service">Servicio a instalar: </label>
+                  <select name="" id="install-service">
+                    <option value="1">Servicio A</option>
+                    <option value="1">Servicio B</option>
+                  </select>
+                </div>
+              </div> -->
 
-    <!--Mission-->
-    <div class="mission">
-
-      <div class="mission-and-vision">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div>
-                <img src="./assets/mission1 (1).png" class="img-fluid" alt="">
-              </div>
             </div>
-    
-            <div class="col-md-6">
-              <div class="height-center mission-and-vision__text">
-                <h3>Nuestra misión:</h3>
-                <p>
-                  Somos una empresa especializada en servicios de perforación horizontal y construcción de infraestructura 
-                  subterránea para todo tipo de obras civiles, acueducto, alcantarillado, petróleo, gas natural/propano, 
-                  redes de energía y comunicaciones.
-                </p>
-              </div>
-            </div>
-    
-            <div class="col-md-6 only-desktop">
-              <div class="height-center mission-and-vision__text">
-                <h3>Nuestra visión:</h3>
-                <p>
-                  Somos una empresa especializada en servicios de perforación horizontal y construcción de infraestructura 
-                  subterránea para todo tipo de obras civiles, acueducto, alcantarillado, petróleo, gas natural/propano, 
-                  redes de energía y comunicaciones.
-                </p>
-              </div>
-            </div>
-
-            <div class="separator only-mobile"></div>
-            
-            <div class="col-md-6">
-              <div>
-                <img src="./assets/mission2 (1).png" class="img-fluid" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-6 only-mobile">
-              <div class="height-center mission-and-vision__text">
-                <h3>Nuestra visión:</h3>
-                <p>
-                  Somos una empresa especializada en servicios de perforación horizontal y construcción de infraestructura 
-                  subterránea para todo tipo de obras civiles, acueducto, alcantarillado, petróleo, gas natural/propano, 
-                  redes de energía y comunicaciones.
-                </p>
-              </div>
-            </div>
-    
           </div>
         </div>
       </div>
-
+    
     </div>
- 
-    <!--Mission End-->
+    <!--End Quotation-->
 
     <!--Contact us-->
     <div class="container">
@@ -344,8 +309,8 @@
     </footer>
     <!--End Footer-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script src="./js/whatsapp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="./js/whatsapp.js"></script>
 
-  </body>
+</body>
 </html>
