@@ -22,11 +22,6 @@ function quotation() {
   formQuotation.classList.toggle("show");
 }
 
-function openQuotationForm() {
-  window.scrollTo(0, positionQuotationContainer);
-  quotation();
-}
-
   /*
   Verificará la posición del scroll del navegador, y pasará como
   parámetro el scroll del elemento
