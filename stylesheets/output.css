@@ -1,7 +1,6 @@
 .button-zoom-out {
   display: flex;
   justify-content: center;
-  width: 20%;
 }
 @media (max-width: 767.98px) {
   .button-zoom-out {
@@ -9,7 +8,7 @@
   }
 }
 .button-zoom-out button {
-  width: 90%;
+  margin-left: 2em;
 }
 
 .button-zoom-out:focus, .button-zoom-out:hover {
@@ -39,6 +38,10 @@
     transform: scale(1.1);
   }
 }
+.bk-black {
+  background-color: black;
+}
+
 .color-black {
   color: black !important;
 }
@@ -58,6 +61,10 @@
 
 .bk-transparent {
   background-color: transparent;
+}
+
+.bk-black {
+  background-color: black;
 }
 
 .color-black {
@@ -162,6 +169,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 p {
@@ -214,6 +222,11 @@ nav {
 
 .separator {
   border: 1px solid black;
+  margin: 2em 0;
+}
+
+.separator-white {
+  border: 1px solid white;
   margin: 2em 0;
 }
 
@@ -366,7 +379,7 @@ nav {
   z-index: 1;
 }
 .header .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-item a {
@@ -395,7 +408,7 @@ nav {
 
 .navbar--separator {
   color: white;
-  margin: 1em;
+  margin: 1em 0.4em;
 }
 
 .nav-link:focus, .nav-link:hover {

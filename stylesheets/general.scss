@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 p {
@@ -52,6 +53,11 @@ nav {
 
 .separator {
   border: 1px solid black;
+  margin: 2em 0;
+}
+
+.separator-white {
+  border: 1px solid white;
   margin: 2em 0;
 }
 

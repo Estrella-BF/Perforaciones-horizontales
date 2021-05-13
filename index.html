@@ -15,13 +15,18 @@
 
   <link rel="stylesheet" href="./stylesheets/output.css">
   <script src="https://kit.fontawesome.com/d04b664777.js" crossorigin="anonymous"></script>
+  
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
   
   <!--Header-->
   <header class="header">
     <!--Navbar Desktop-->
-    <nav class="navbar navbar-expand-lg only-desktop"">
+    <nav class="navbar navbar-expand-lg only-desktop w-100">
       <div class="container-fluid">
         <a class="navbar-brand w-10" href="#">
           <div class="bk-white">
@@ -39,7 +44,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
             <li class="nav-item">
               <a class="nav-link active fw-bolder" aria-current="page" href="">Principal</a>
             </li>
@@ -72,9 +77,22 @@
               <a class="nav-link" href="#">Contáctenos</a>
             </li>
 
+            <li>
+              <div class="button-zoom-out quotation-button">
+                <button 
+                onclick="openQuotationForm()"
+                class="btn btn-lg bk-white" type="button"
+                > 
+                  Cotiza en un click
+                  <i class="fas fa-file-alt quotation-icon"></i>
+                </button>
+              </div>
+              
+            </li>
+
           </ul>
 
-          <form class="button-zoom-out quotation-button">
+      <!--     <form class="button-zoom-out quotation-button">
             <button 
             onclick="openQuotationForm()"
             class="btn btn-lg bk-white" type="button"
@@ -82,14 +100,14 @@
               Cotiza en un click
               <i class="fas fa-file-alt quotation-icon"></i>
             </button>
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
     <!--Navbar Desktop fin-->
 
     <!--Navbar mobile-->
-    <nav class="navbar navbar-expand-lg only-mobile mb-2" id="nav-menu-mobile">
+    <nav class="navbar navbar-expand-lg only-mobile mb-2 bk-black" id="nav-menu-mobile">
       <div class="container-fluid">
         <a class="navbar-brand w-40 bk-white" href="#">
           <img src="./assets/logo1.png" class="img-fluid">
