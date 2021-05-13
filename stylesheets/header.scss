@@ -1,6 +1,8 @@
 .header {
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(77,77,77,1) 27%, rgba(117,117,117,1) 50%, rgba(68,68,68,1) 72%, rgba(0,0,0,1) 100%);
+  .navbar {
+    position: absolute;
+    z-index: 1;
+  }
 
   .nav-link {
     font-size: 1.5rem;

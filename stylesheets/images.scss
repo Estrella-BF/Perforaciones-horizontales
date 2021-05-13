@@ -15,17 +15,30 @@
   padding: 10em;
   vertical-align: top;
   width: 50%;
+  position: absolute;
+  top: 17%;
 
   // mobile
   @media (max-width: 767.98px) {
+    background-color: black;
     margin-bottom: 2em;
     padding: 1em;
+    position: relative;
     width: 100%;
   }
 }
 
+.carousel-item {
+
+  // mobile
+  @media (max-width: 767.98px) {
+    background-color: black;
+  }
+}
+
 .slider__text-horizontal--title {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: bolder;
 
   @media (max-width: 767.98px) {
     font-size: 1.8rem;
@@ -70,8 +83,4 @@
 .slider-many-items--item {
   margin: 0em 4em;
   margin-bottom: 4em;
-}
-
-.slider__img {
-  display: inline-block;
 }
