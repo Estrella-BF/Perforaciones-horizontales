@@ -403,12 +403,16 @@ nav {
   }
 }
 .nav-bar__text p {
+  font-weight: bold;
+  font-size: 1rem;
   margin: 0;
 }
 
 .navbar--separator {
   color: white;
-  margin: 1em 0.4em;
+  display: flex;
+  align-items: center;
+  margin: 0.4em;
 }
 
 .nav-link:focus, .nav-link:hover {
