@@ -1,6 +1,10 @@
 .header {
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(77,77,77,1) 27%, rgba(117,117,117,1) 50%, rgba(68,68,68,1) 72%, rgba(0,0,0,1) 100%);
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
 }
 
 .nav-item  {
@@ -16,11 +20,13 @@
 .nav-bar__text {
   color: white;
   margin-top: 1em; 
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 
   // mobile
   @media (max-width: 767.98px) {
     padding-left: 1em;
+    text-align: center;
+    width: 100%;
   }
 
   p {
