@@ -171,6 +171,11 @@ nav {
 
   h4 {
     margin: 4em 0 2em;
+    
+    // mobile
+    @media (max-width: 767.98px) {
+      margin: 2em 0;
+    }
   }
 
   .title-section {
