@@ -224,10 +224,11 @@ nav {
   border: 1px solid black;
   margin: 2em 0;
 }
-
-.separator-white {
+.separator.white {
   border: 1px solid white;
-  margin: 2em 0;
+}
+.separator.light {
+  border: 1px solid #e2e2e2;
 }
 
 .form {
@@ -262,7 +263,7 @@ nav {
 
 .title-section {
   text-align: center;
-  margin: 6em 1em;
+  margin: 6em 1em 4em;
 }
 @media (max-width: 767.98px) {
   .title-section {
@@ -325,14 +326,28 @@ nav {
 .contact-us {
   position: relative;
 }
+.contact-us h4 {
+  margin: 4em 0 2em;
+}
+.contact-us .title-section {
+  text-align: left;
+}
+.contact-us .contact-us--description {
+  color: #757575;
+  text-align: left;
+  margin: 2em 0 5em;
+}
+.contact-us .form {
+  padding: 0;
+  box-shadow: none;
+}
 
-.contact-us-info {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  vertical-align: middle;
-  text-align: center;
+.contact-us__social-network {
+  margin: 3em 0;
+}
+
+.map {
+  margin-bottom: 5em;
 }
 
 .social-networks {
