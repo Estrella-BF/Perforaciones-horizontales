@@ -27,7 +27,7 @@ select {
 }
 
 input {
-  width: 50% !important;
+  width: 70% !important;
 
   // mobile
   @media (max-width: 767.98px) {
@@ -163,6 +163,9 @@ nav {
 }
 
 // Contact us
+.contact-us {
+  position: relative;
+}
 
 .contact-us-info {
   height: 100%;
@@ -181,6 +184,32 @@ nav {
     display: inline-block;
     width: 50%;
   }
+}
+
+.lateral-background {
+  height: 100%;
+  width: 28%;
+  position: absolute;
+  right: 0;
+  background-image: url('../assets/Tunnel-Liner-768x1024.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lateral-background:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+// Footer
+footer {
+  position: absolute;
+  width: 100%;
 }
 
 // Company
