@@ -19,7 +19,137 @@
 </head>
 <body>
   
+  <!--Header-->
+  <header class="header">
+    <!--Navbar Desktop-->
+    <nav class="navbar navbar-expand-lg only-desktop w-100 mt-4">
+      <div class="container-fluid">
+        <a class="navbar-brand w-10" href="#">
+          <div class="bk-white">
+            <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+          </div>
+       
+          <div class="nav-bar__text">
+            <p>(+51) 983 558 207 </p>
+            <p>comercial@perforacioneshorizontales.pe</p>
+            <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+          </div>
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder" aria-current="page" href="./index.html">Principal</a>
+            </li>
+            <div class="navbar--separator">|</div>
+            <li class="nav-item">
+              <a class="nav-link" href="./company.html">Empresa</a>
+            </li>
+            <div class="navbar--separator">|</div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
+              </ul>
+            </li>
+            <div class="navbar--separator">|</div>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contáctenos</a>
+            </li>
+
+            <li>
+              <div class="button-zoom-out quotation-button">
+                <button 
+                onclick="openQuotationForm()"
+                class="btn btn-lg bk-white" type="button"
+                > 
+                  Cotiza en un click
+                  <i class="fas fa-file-alt quotation-icon"></i>
+                </button>
+              </div>
+              
+            </li>
+
+          </ul>
+
+        </div>
+        
+      </div>
+    </nav>
+    <!--Navbar Desktop fin-->
+
+    <!--Navbar mobile-->
+    <nav class="navbar navbar-expand-lg only-mobile mb-2 bk-black" id="nav-menu-mobile">
+      <div class="container-fluid">
+        <a class="navbar-brand w-40 bk-white" href="#">
+          <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-menu__icon--mobile fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
+            <li class="nav-item">
+            <i class="fas fa-home color-white"></i>
+              <a class="nav-link d-inline-block p-2 fw-bolder" aria-current="page" href="./index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+            <i class="fas fa-building color-white"></i>
+              <a class="nav-link d-inline-block p-2" href="./company.html">Empresa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <i class="fas fa-briefcase color-white"></i>
+              <a class="nav-link dropdown-toggle d-inline-block p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+            <i class="fas fa-headset color-white"></i>
+              <a class="nav-link d-inline-block p-2" href="#contact-us">Contáctenos</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <i class="fas fa-file-alt color-white"></i>
+              <a 
+              onclick="quotation()"
+              class="nav-link d-inline-block p-2" href="#quotation"
+              >Cotiza en un click</a>
+            </li>
+            <li>
+              <div class="nav-bar__text" id="nav-text-mobile">
+                <p>(+51) 983 558 207 </p>
+                <p>comercial@perforacioneshorizontales.pe</p>
+                <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </nav>
+    <!--Navbar mobile fin-->
+    
+  </header>
+  <!--Header-->
 
     <!--Quotation-->
     <div class="text-center" id="quotation">
