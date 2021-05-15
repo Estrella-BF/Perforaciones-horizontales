@@ -427,6 +427,7 @@ footer {
 
 .header .navbar {
   position: absolute;
+  padding-top: 2em;
   z-index: 1;
 }
 .header .nav-link {
