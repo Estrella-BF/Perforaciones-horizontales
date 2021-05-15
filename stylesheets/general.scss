@@ -113,7 +113,9 @@ nav {
 }
 
 .quotation {
-  background: linear-gradient(180deg, black 0%, #484848 44%, #444444 70%, black 100%);
+  background: linear-gradient(
+    180deg
+    , black 10%, #484848 100%, #444444 70%);
   color: white;
   text-align: center;
   padding: 2em;
