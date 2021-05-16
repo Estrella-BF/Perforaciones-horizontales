@@ -28,67 +28,69 @@
     <!--Navbar Desktop-->
     <nav class="navbar navbar-expand-lg only-desktop w-100 position-absolute">
       <div class="container-fluid">
-        <a class="navbar-brand w-10" href="#">
-          <div class="bk-white">
-            <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+<!--         <div class="w-100 d-flex"> -->
+          <a class="navbar-brand w-15" href="#">
+            <div class="">
+              <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+            </div>
+         
+<!--             <div class="nav-bar__text">
+              <p>(+51) 983 558 207 </p>
+              <p>comercial@perforacioneshorizontales.pe</p>
+              <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+            </div> -->
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder" aria-current="page" href="./index.html">Principal</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item">
+                <a class="nav-link" href="./company.html">Empresa</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
+                </ul>
+              </li>
+              <div class="navbar--separator">|</div>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contáctenos</a>
+              </li>
+  
+              <li>
+                <div class="button-zoom-out quotation-button">
+                  <button 
+                  onclick="openQuotationForm()"
+                  class="btn btn-lg bk-white" type="button"
+                  > 
+                    Cotiza en un click
+                    <i class="fas fa-file-alt quotation-icon"></i>
+                  </button>
+                </div>
+                
+              </li>
+  
+            </ul>
+  
           </div>
-       
-          <div class="nav-bar__text">
-            <p>(+51) 983 558 207 </p>
-            <p>comercial@perforacioneshorizontales.pe</p>
-            <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
-          </div>
-        </a>
+ <!--        </div> -->
     
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active fw-bolder" aria-current="page" href="./index.html">Principal</a>
-            </li>
-            <div class="navbar--separator">|</div>
-            <li class="nav-item">
-              <a class="nav-link" href="./company.html">Empresa</a>
-            </li>
-            <div class="navbar--separator">|</div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
-              </ul>
-            </li>
-            <div class="navbar--separator">|</div>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contáctenos</a>
-            </li>
-
-            <li>
-              <div class="button-zoom-out quotation-button">
-                <button 
-                onclick="openQuotationForm()"
-                class="btn btn-lg bk-white" type="button"
-                > 
-                  Cotiza en un click
-                  <i class="fas fa-file-alt quotation-icon"></i>
-                </button>
-              </div>
-              
-            </li>
-
-          </ul>
-
-        </div>
-        
       </div>
     </nav>
     <!--Navbar Desktop fin-->
@@ -169,7 +171,7 @@
             </div>
 
             <div class="slider__img">
-              <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              <img src="./assets/banner.jpeg" class="d-block w-100" alt="...">
             </div>
 
             <div class="slider__text-horizontal only-mobile">
@@ -189,7 +191,7 @@
             </div>
       
             <div class="slider__img">
-              <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              <img src="./assets/banner.jpeg" class="d-block w-100" alt="...">
             </div>
 
             <div class="slider__text-horizontal only-mobile">
@@ -208,7 +210,7 @@
             </div>
   
             <div class="slider__img">
-              <img src="./assets/drilling machine.jpg" class="d-block w-100" alt="...">
+              <img src="./assets/banner.jpeg" class="d-block w-100" alt="...">
             </div>
 
             <div class="slider__text-horizontal only-mobile">

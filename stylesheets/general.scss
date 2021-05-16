@@ -225,7 +225,7 @@ nav {
   background-position: center;
 }
 
-.lateral-background:before {
+.lateral-background:before, .img-opacity:before {
 	content:'';
 	position: absolute;
   top: 0;

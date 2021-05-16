@@ -123,6 +123,7 @@
 .slider__text-horizontal--title {
   font-size: 4rem;
   font-weight: bolder;
+  text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.71);
 }
 @media (max-width: 767.98px) {
   .slider__text-horizontal--title {
@@ -133,6 +134,7 @@
 
 .slider__text-horizontal--paragraph {
   font-size: 1.2rem;
+  text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.71);
 }
 @media (max-width: 767.98px) {
   .slider__text-horizontal--paragraph {
@@ -375,7 +377,7 @@ nav {
   background-position: center;
 }
 
-.lateral-background:before {
+.lateral-background:before, .img-opacity:before {
   content: "";
   position: absolute;
   top: 0;
@@ -426,7 +428,7 @@ footer {
 }
 
 .header .navbar {
-  padding-top: 2em;
+  padding-top: 1em;
   z-index: 1;
 }
 .header .nav-link {
@@ -494,6 +496,10 @@ footer {
 
 .w-10 {
   width: 10%;
+}
+
+.w-15 {
+  width: 15%;
 }
 
 .w-20 {
