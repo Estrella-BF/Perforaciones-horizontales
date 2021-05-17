@@ -288,3 +288,16 @@ footer {
     margin-top: 1em;
   }
 }
+
+.services-list {
+  display: flex;
+}
+
+.services-list__item {
+  margin: 3em;
+}
+
+.services-list__item--title-vertical--title {
+  text-align: center;
+  margin-top: 1em;
+}
