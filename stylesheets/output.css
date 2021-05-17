@@ -239,6 +239,9 @@ nav {
 .separator.light {
   border: 1px solid #e2e2e2;
 }
+.separator.big-margen {
+  margin: 6em 0;
+}
 
 .form {
   -webkit-box-shadow: -2px -2px 10px 4px rgba(0, 0, 0, 0.04);
@@ -424,10 +427,6 @@ footer {
   font-size: 1.5rem;
 }
 
-.mission-and-vision {
-  margin: 5em 0;
-}
-
 @media (max-width: 767.98px) {
   .mission-and-vision__text {
     margin-top: 1em;
@@ -440,6 +439,20 @@ footer {
 }
 .header .nav-link {
   font-size: 1.2rem;
+}
+.header .header__nav--white {
+  -webkit-box-shadow: 0px 5px 15px 5px #000000;
+  box-shadow: 0px -5px 12px 5px #000000;
+}
+.header .header__nav--white .nav-item a {
+  color: black;
+}
+.header .header__nav--white .quotation-button button {
+  background-color: #de3e1f;
+  color: white;
+}
+.header .header__nav--white .quotation-button button i {
+  color: white;
 }
 
 .nav-item a {

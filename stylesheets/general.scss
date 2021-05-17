@@ -69,6 +69,10 @@ nav {
   &.light {
     border: 1px solid $dark-light;
   }
+
+  &.big-margen {
+    margin: 6em 0;
+  }
 }
 
 .form {
@@ -276,7 +280,6 @@ footer {
 }
 
 .mission-and-vision {
-  margin: 5em 0;
 }
 
 .mission-and-vision__text {
