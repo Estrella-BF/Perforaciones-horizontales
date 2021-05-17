@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Perforaciones Horizontales</title>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" 
   rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
 
   <!--Floating WhatsApp css-->
   <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
@@ -16,75 +21,82 @@
 
   <link rel="stylesheet" href="./stylesheets/output.css">
   <script src="https://kit.fontawesome.com/d04b664777.js" crossorigin="anonymous"></script>
+  
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
   
   <!--Header-->
   <header class="header">
     <!--Navbar Desktop-->
-    <nav class="navbar navbar-expand-lg only-desktop w-100">
+    <nav class="navbar navbar-expand-lg only-desktop w-100 position-absolute header__nav--white">
       <div class="container-fluid">
-        <a class="navbar-brand w-10" href="#">
-          <div class="bk-white">
-            <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+<!--         <div class="w-100 d-flex"> -->
+          <a class="navbar-brand w-15" href="#">
+            <div class="">
+              <img src="./assets/Letras perforaciones horizontales sin fondo.png" class="img-fluid">
+            </div>
+         
+<!--             <div class="nav-bar__text">
+              <p>(+51) 983 558 207 </p>
+              <p>comercial@perforacioneshorizontales.pe</p>
+              <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+            </div> -->
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Principal</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder" href="./company.html">Empresa</a>
+              </li>
+              <div class="navbar--separator">|</div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navInCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navInCompany">
+                  <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
+                  <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
+                </ul>
+              </li>
+              <div class="navbar--separator">|</div>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contáctenos</a>
+              </li>
+  
+              <li>
+                <div class="button-zoom-out quotation-button">
+                  <button 
+                  onclick="openQuotationForm()"
+                  class="btn btn-lg bk-white" type="button"
+                  > 
+                    Cotiza en un click
+                    <i class="fas fa-file-alt"></i>
+                  </button>
+                </div>
+                
+              </li>
+  
+            </ul>
+  
           </div>
-       
-          <div class="nav-bar__text">
-            <p>(+51) 983 558 207 </p>
-            <p>comercial@perforacioneshorizontales.pe</p>
-            <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
-          </div>
-        </a>
+ <!--        </div> -->
     
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active fw-bolder" aria-current="page" href="./index.html">Principal</a>
-            </li>
-            <div class="navbar--separator">|</div>
-            <li class="nav-item">
-              <a class="nav-link" href="./company.html">Empresa</a>
-            </li>
-            <div class="navbar--separator">|</div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
-                <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
-              </ul>
-            </li>
-            <div class="navbar--separator">|</div>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contáctenos</a>
-            </li>
-
-            <li>
-              <div class="button-zoom-out quotation-button">
-                <button 
-                onclick="openQuotationForm()"
-                class="btn btn-lg bk-white" type="button"
-                > 
-                  Cotiza en un click
-                  <i class="fas fa-file-alt quotation-icon"></i>
-                </button>
-              </div>
-              
-            </li>
-
-          </ul>
-
-        </div>
-        
       </div>
     </nav>
     <!--Navbar Desktop fin-->
@@ -102,18 +114,18 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
             <li class="nav-item">
             <i class="fas fa-home color-white"></i>
-              <a class="nav-link d-inline-block p-2 fw-bolder" aria-current="page" href="./index.html">Principal</a>
+              <a class="nav-link d-inline-block p-2" aria-current="page" href="./index.html">Principal</a>
             </li>
             <li class="nav-item">
             <i class="fas fa-building color-white"></i>
-              <a class="nav-link d-inline-block p-2" href="./company.html">Empresa</a>
+              <a class="nav-link d-inline-block p-2 fw-bolder" href="./company.html">Empresa</a>
             </li>
             <li class="nav-item dropdown">
-              <i class="fas fa-briefcase color-white"></i>
-              <a class="nav-link dropdown-toggle d-inline-block p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle d-inline-block dropdown-menu--mobile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-briefcase color-white"></i>
                 Servicios
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navInCompanyM">
                 <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
                 <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
                 <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
@@ -188,21 +200,220 @@
     </div>
   </div>
 
-  <!--Footer-->
-  <footer>
-    <div class="w-100 text-center pb-4 pt-4">
-      Copyright © 2021, Perforaciones Horizontales
+  <!--Quotation-->
+  <div class="quotation" id="quotation">
+    <h4>Cotiza tu Proyecto</h4>
+    <p>Cuéntanos acerca de tu proyecto.
+      Realiza la solicitud de tu cotización en menos de 3 minutos y en un sólo click.</p>
+    <div 
+      id="btn-quotation"
+    class="w-100 text-center pt-5 pb-5"
+    >
+      <button 
+      class="btn btn-lg bk-black-white button-zoom-out d-inline-block"
+      onclick="quotation()"
+      >Cotizar ahora
+      </button>
     </div>
-    <div class="w-100 text-center pb-4 pt-4">
-      (Datos de dirección e información legal o importante)
-    </div>
-  </footer>
-  <!--End Footer-->
+  </div>
 
-  <!--WhatsApp float-->  
-  <div id="WAButton"></div>  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+    
+        <div id="form-quotation" class="hidden">
+          <div>
+            <div class="close-icon">
+              <button 
+              onclick="quotation()"
+              class="no-button" type="button">X</button>
+            </div>
+
+
+            <form class="form">
+              <div class="col-md-12">
+                <label for="validationServer01" class="form-label col-md-2">Servicio a instalar:</label>
+                <select class="form-select" id="validationServer01" name="" id="">
+                  <option value="">Seleccionar</option>
+                  <option value="">Opción A</option>
+                  <option value="">Opción B</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <label for="validationServer02" class="form-label col-md-2">Ubicación del proyecto:</label>
+                <input type="text" class="form-control" id="validationServer02" value="" required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="validationServer03" class="form-label">
+                  Google maps de la ubicación del proyecto:
+                </label>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="validationServer04" class="form-label col-md-2">RUC o DNI:</label>
+                <input type="text" class="form-control" id="validationServer04" value="" required>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="validationServer05" class="form-label col-md-2">Nombre del contacto:</label>
+                <input type="text" class="form-control" id="validationServer05" value="" required>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="validationServer06" class="form-label col-md-2">Número del contacto:</label>
+                <input type="text" class="form-control" id="validationServer06" value="" required>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="validationServer07" class="form-label col-md-2">Correo del contacto:</label>
+                <input type="text" class="form-control" id="validationServer07" value="" required>
+              </div>
+<!-- 
+              <div class="col-md-12">
+                <label for="validationServer02" class="form-label">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationServerUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                  <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="col-12">
+                <div class="text-center">
+                  <button class="btn bk-black-white button-zoom-out d-inline-block" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+<!--             <div class="form">
+              <div>
+                <label for="install-service">Servicio a instalar: </label>
+                <select name="" id="install-service">
+                  <option value="1">Servicio A</option>
+                  <option value="1">Servicio B</option>
+                </select>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!--End Quotation-->
+
+    <!--Contact us-->
+    <div class="contact-us" id="contact-us">
+      <div class="container">
+        <div class="row">
+    
+          <div class="lateral-background only-desktop"></div>
+    
+          <div class="col-md-9">
+            <div class="title-section mb-0">
+              <div class="title-section__title">
+                <h2 class="title-section__title--text text-left">Contáctenos</h2>
+                <div class="title-section__title--bar"></div>
+              </div>
+            </div>
+
+            <div class="contact-us--description">
+              <div>Estamos disponibles para ayudarle de lunes a sábado 8:00  am hasta  7:00 pm. </div>
+              <div>Teléfono: (+51) 983 558 207 </div>
+              <div>Correo: comercial@perforacioneshorizontales.pe</div>
+              <div>Dirección: Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</div>
+            </div>
+
+            <form class="form">
+    
+              <div class="col-md-12">
+                <label for="validationContact01" class="form-label col-md-2">Nombre:</label>
+                <input type="text" class="form-control" id="validationContact01" value="" required>
+              </div>
+    
+              <div class="col-md-12">
+                <label for="validationContact02" class="form-label col-md-2">Número de teléfono:</label>
+                <input type="text" class="form-control" id="validationContact02" value="" required>
+              </div>
+    
+              <div class="col-md-12">
+                <label for="validationContact03" class="form-label col-md-2">Correo electrónico:</label>
+                <input type="text" class="form-control" id="validationContact03" value="" required>
+              </div>
+    
+              <div class="col-12">
+                <div class="text-center">
+                  <button class="btn bk-black-white button-zoom-out d-inline-block" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="separator light"></div>
+            <h4>Síguenos en las redes sociales:</h4>
+            <div class="contact-us__social-network">
+    
+              <div class="social-networks">
+                <div class="social-networks__icons">
+                  <img src="./assets/Social-Media-Icons-1.png" alt="" class="img-fluid">
+                </div>
+            
+              </div>
+
+            </div>
+          </div>
+    
+          <div class="col-md-8">
+            <div class="separator light"></div>
+            <h4 class="mb-0">O visítanos:</h4>
+            <p class="mt-2 mb-2">Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+            <div class="map">
+
+              <div id="map"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Contact us-->
+
+    <!--Footer-->
+    <footer>
+      <div class="w-100 text-center pb-4 pt-4">
+        Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú
+      </div>
+      <div class="w-100 text-center pb-4 pt-4">
+        Copyright © 2021, Perforaciones Horizontales
+      </div>
+    </footer>
+    <!--End Footer-->
+
+    <!--WhatsApp float-->  
+    <div id="WAButton"></div>  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+  <script src="./js/map.js"></script> 
+  <script src="./js/index.js"></script> 
   <script src="./js/whatsapp.js"></script>
 </body>
 </html>
