@@ -22,6 +22,9 @@ if (quotationContainer) {
   }
 }
 
+function contactBtn(){
+    window.open("https://api.whatsapp.com/send?phone=51971313111&text=%0a‎Hello%0aWorld");
+}
 
 
   /*
