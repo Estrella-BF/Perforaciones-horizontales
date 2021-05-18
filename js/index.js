@@ -26,6 +26,10 @@ function contactBtn(){
     window.open("https://api.whatsapp.com/send?phone=51971313111&text=%0a‎Hello%0aWorld");
 }
 
+function btnTwo() {
+  window.open("https://api.whatsapp.com/send?phone=51971313111&text=hola%0Asoy%0Aun%20%0Apollito%20%0Agordo");
+}
+
 
   /*
   Verificará la posición del scroll del navegador, y pasará como
