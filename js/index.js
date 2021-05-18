@@ -28,19 +28,24 @@ function contactBtn(event){
   const nameValidation = document.getElementById('nameValidation');
   const phoneNumberValidation = document.getElementById('phoneNumberValidation');
   const emailValidation = document.getElementById('emailValidation');
+  const comentarioValidation = document.getElementById('comentarioValidation');
 
   const nameValue = nameValidation.value;
   const phoneNumber = phoneNumberValidation.value;
   const email = emailValidation.value;
+  const comentariosValue = comentarioValidation.value;
 
   if (nameValue && phoneNumber && email) {
     event.preventDefault();
-    console.log('nameValidation', nameValue)
+ /*    console.log('nameValidation', nameValue)
     console.log('phoneNumber', phoneNumber)
-    console.log('email', email)
-    console.log(`https://api.whatsapp.com/send?phone=51971313111&text=%0aNombre:%20${nameValue}%0aNúmero%20de%20teléfono:%20${phoneNumber}%0aCorreo%20Electrónico:%20${email}`)
-    
-    window.open(`https://api.whatsapp.com/send?phone=51971313111&text=%0aNombre:%20${nameValue}%0aNúmero%20de%20teléfono:%20${phoneNumber}%0aCorreo%20Electrónico:%20${email}`);
+    console.log('email', email) */
+
+    const comentarios = comentariosValue ? `%0a%0aComentarios:%20${comentariosValue}` : '';
+
+    // console.log(`https://api.whatsapp.com/send?phone=51971313111&text=%0aNombre:%20${nameValue}%0%0aNúmero%20de%20teléfono:%20${phoneNumber}%0%0aCorreo%20Electrónico:%20${email}`)
+
+    window.open(`${urlWhatsapp}%0aNombre:%20${nameValue}%0a%0aNúmero%20de%20teléfono:%20${phoneNumber}%0a%0aCorreo%20Electrónico:%20${email}${comentarios}`);
     // window.open("https://api.whatsapp.com/send?phone=51971313111&text=%0a‎Hello%0aWorld");
     // window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
   } 
