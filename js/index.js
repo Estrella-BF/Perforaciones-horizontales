@@ -38,8 +38,9 @@ function contactBtn(event){
     console.log('nameValidation', nameValue)
     console.log('phoneNumber', phoneNumber)
     console.log('email', email)
-    console.log(`${urlWhatsapp}%0Nombre:%${nameValue}%0Número%de%teléfono:%${phoneNumber}%0Correo%Electrónico:%${email}`)
-    window.open(`${urlWhatsapp}%0Nombre:%${nameValue}%0Número%de%teléfono:%${phoneNumber}%0Correo%Electrónico:%${email}`);
+    console.log(`https://api.whatsapp.com/send?phone=51971313111&text=%0aNombre:%20${nameValue}%0aNúmero%20de%20teléfono:%20${phoneNumber}%0aCorreo%20Electrónico:%20${email}`)
+    
+    window.open(`https://api.whatsapp.com/send?phone=51971313111&text=%0aNombre:%20${nameValue}%0aNúmero%20de%20teléfono:%20${phoneNumber}%0aCorreo%20Electrónico:%20${email}`);
     // window.open("https://api.whatsapp.com/send?phone=51971313111&text=%0a‎Hello%0aWorld");
     // window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
   } 
