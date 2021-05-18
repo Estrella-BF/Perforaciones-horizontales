@@ -748,19 +748,7 @@
         </div>
       </div>
     </div>
-  test 
 
-  <div class="text-center">
-    <button class="btn bk-black-white button-zoom-out d-inline-block" type="button" 
-    onclick="contactBtn()">Enviar</button>
-  </div>
-  <div class="text-center">
-    <button class="btn bk-black-white button-zoom-out d-inline-block" type="button"
-    onclick="btnTwo()"
-    >Enviar2</button>
-  </div>
-
-  end test
   </div>
   <!--End Quotation-->
 
@@ -790,25 +778,25 @@
           <form class="form">
   
             <div class="col-md-12">
-              <label for="validationContact01" class="form-label col-md-2">Nombre:</label>
-              <input type="text" class="form-control" id="validationContact01" value="" required>
+              <label for="nameValidation" class="form-label col-md-2">Nombre:</label>
+              <input type="text" class="form-control" id="nameValidation" value="" required>
             </div>
   
             <div class="col-md-12">
-              <label for="validationContact02" class="form-label col-md-2">Número de teléfono:</label>
-              <input type="text" class="form-control" id="validationContact02" value="" required>
+              <label for="phoneNumberValidation" class="form-label col-md-2">Número de teléfono:</label>
+              <input type="text" class="form-control" id="phoneNumberValidation" value="" required>
             </div>
   
             <div class="col-md-12">
-              <label for="validationContact03" class="form-label col-md-2">Correo electrónico:</label>
-              <input type="text" class="form-control" id="validationContact03" value="" required>
+              <label for="emailValidation" class="form-label col-md-2">Correo electrónico:</label>
+              <input type="text" class="form-control" id="emailValidation" value="" required>
             </div>
   
             <div class="col-12">
               <div class="text-center">
                 <button 
-                class="btn bk-black-white button-zoom-out d-inline-block" type="button"
-                onclick="contactBtn()"
+                class="btn bk-black-white button-zoom-out d-inline-block" type="submit"
+                onclick="contactBtn(event)"
                 >Enviar</button>
               </div>
             </div>
