@@ -22,21 +22,6 @@ if (quotationContainer) {
   }
 }
 
-//test
-function sendMail() {
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "gracielabenitesf@gmail.com",
-    Password : "$Egbf1307g$",
-    To : 'estrellabenitesf@gmail.com',
-    From : 'gracielabenitesf@gmail.com',
-    Subject : "This is the subject",
-    Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
-
 
 
   /*
