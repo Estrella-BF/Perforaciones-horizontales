@@ -168,3 +168,49 @@ if (main) {
   });
 }
   
+const arrayServiceList = [
+  {
+    id: 1,
+    title: 'Servicio seleccionado 1',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  },
+  {
+    id: 2,
+    title: 'Servicio seleccionado 2',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  },
+  {
+    id: 3,
+    title: 'Servicio seleccionado 3',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  },
+  {
+    id: 4,
+    title: 'Servicio seleccionado 4',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  },
+  {
+    id: 5,
+    title: 'Servicio seleccionado 5',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  },
+  {
+    id: 6,
+    title: 'Servicio seleccionado 6',
+    paragraph: 'La máquina de restitución instala las varillas por dentro de la tubería a sustituir tanto para acueductos y alcantarillados en diámetros de 3" hasta 60" '
+  }
+];
+
+
+function servicioSelected(id) {
+  const servicioSelectedArr = arrayServiceList.filter(item => item.id === id);
+  if (servicioSelectedArr) {
+    const servicioSelectedObject = servicioSelectedArr[0];
+    const titleServiceSelected = document.getElementById('titleServiceSelected');
+    const paragraphServiceSected = document.getElementById('paragraphServiceSected');
+
+    titleServiceSelected.innerHTML = servicioSelectedObject.title;
+    paragraphServiceSected.innerHTML = servicioSelectedObject.paragraph;
+  }
+}
+
