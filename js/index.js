@@ -52,6 +52,13 @@ async function sendFormQuotation(event) {
   const numeroContactoValidacion = document.getElementById('numeroContactoValidacion');
   const correoContactoValidacion = document.getElementById('correoContactoValidacion');
 
+  // tuberia
+  const profundidadTValidacion = document.getElementById('profundidadTValidacion');
+  const longitudTValidacion = document.getElementById('longitudTValidacion');
+  const diametroTValidacion = document.getElementById('diametroTValidacion');
+  const unidadDiametroTValidacion = document.getElementById('unidadDiametroTValidacion');
+
+
   const servicioValue = servicioValidacion.value;
   const proyectoValue = proyectoValidacion.value;
   const rucValue = rucValidacion.value;
@@ -59,7 +66,17 @@ async function sendFormQuotation(event) {
   const numeroContactoValue = numeroContactoValidacion.value;
   const correoContactoValue = correoContactoValidacion.value;
 
-  if (servicioValue && proyectoValue && rucValue && nombreContactoValue && numeroContactoValue && correoContactoValue) {
+  const profundidadTValue = profundidadTValidacion.value;
+  const longitudTValue = longitudTValidacion.value;
+  const diametroTValue = diametroTValidacion.value;
+  const unidadDiametroTValue = unidadDiametroTValidacion.value;
+
+
+  if (
+    servicioValue && proyectoValue && rucValue && nombreContactoValue 
+    && numeroContactoValue && correoContactoValue && profundidadTValue 
+    && longitudTValue && diametroTValue && unidadDiametroTValue
+    ) {
     event.preventDefault();
     const servicioKeyValue = `%0aServicio:%20${servicioValue}`;
     const proyectoKeyValue = `%0aProyecto:%20${proyectoValue}`;
@@ -68,21 +85,44 @@ async function sendFormQuotation(event) {
     const numeroKeyValue = `%0aNúmero:%20${numeroContactoValue}`;
     const correoKeyValue = `%0aCorreo:%20${correoContactoValue}`;
 
-    window.open(`${urlWhatsapp}${servicioKeyValue}${proyectoKeyValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`);
+    const profundidadKeyTValue = `%0aProfundidad de tubería:%20${profundidadTValue}`;
+    const longitudKeyTValue = `%0aLongitud%20de%20tubería:%20${longitudTValue}%20${unidadDiametroTValue}`;
+    const diametroKeyTValue = `%0aCorreo:${diametroTValue}`;
 
-    await setQuotationDB(servicioValue, proyectoValue, rucValue, nombreContactoValue, numeroContactoValue, correoContactoValue);
+    const text = `${servicioKeyValue}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
+
+    window.open(`${urlWhatsapp}${text}`);
+
+    const objValue = {
+      servicio: servicioValue, 
+      proyecto: proyectoValue, 
+      ruc: rucValue, 
+      nombre: nombreContactoValue, 
+      numero: numeroContactoValue, 
+      correo: correoContactoValue,
+      profundidadTuberia: profundidadTValue,
+      longitudTuberia: longitudTValue,
+      unidadDiametroTuberia: unidadDiametroTValue,
+      diametroTuberia: diametroTValue
+    }
+
+    await setQuotationDB(objValue);
 
   }
 }
 
-const setQuotationDB = (servicio, proyecto, ruc, nombre, numero, correo) => 
+const setQuotationDB = ({servicio, proyecto, ruc, nombre, numero, correo, profundidadTuberia, longitudTuberia, unidadDiametroTuberia, diametroTuberia}) => 
   db.collection('cotizaciones-web').doc().set({
     servicio,
     proyecto,
     ruc,
     nombre,
     numero,
-    correo
+    correo,
+    profundidadTuberia,
+    longitudTuberia,
+    unidadDiametroTuberia,
+    diametroTuberia
   }).then(() => {
     servicioValidacion.value = '';
     proyectoValidacion.value = '';
@@ -90,7 +130,10 @@ const setQuotationDB = (servicio, proyecto, ruc, nombre, numero, correo) =>
     nombreContactoValidacion.value = '';
     numeroContactoValidacion.value = '';
     correoContactoValidacion.value = '';
-
+    profundidadTValue.value = '';
+    longitudTValue.value = '';
+    diametroTValue.value = '';
+    unidadDiametroTValue.value = '';
   });
 
 /*
