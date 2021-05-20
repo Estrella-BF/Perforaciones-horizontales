@@ -61,7 +61,17 @@ async function sendFormQuotation(event) {
 
   if (servicioValue && proyectoValue && rucValue && nombreContactoValue && numeroContactoValue && correoContactoValue) {
     event.preventDefault();
+    const servicioKeyValue = `%0aServicio:%20${servicioValue}`;
+    const proyectoKeyValue = `%0aProyecto:%20${proyectoValue}`;
+    const rucKeyValue = `%0aRuc:%20${rucValue}`;
+    const nombreKeyValue = `%0aNombre:%20${nombreContactoValue}`;
+    const numeroKeyValue = `%0aNúmero:%20${numeroContactoValue}`;
+    const correoKeyValue = `%0aCorreo:%20${correoContactoValue}`;
+
+    window.open(`${urlWhatsapp}${servicioKeyValue}${proyectoKeyValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`);
+
     await setQuotationDB(servicioValue, proyectoValue, rucValue, nombreContactoValue, numeroContactoValue, correoContactoValue);
+
   }
 }
 
@@ -73,6 +83,14 @@ const setQuotationDB = (servicio, proyecto, ruc, nombre, numero, correo) =>
     nombre,
     numero,
     correo
+  }).then(() => {
+    servicioValidacion.value = '';
+    proyectoValidacion.value = '';
+    rucValidacion.value = '';
+    nombreContactoValidacion.value = '';
+    numeroContactoValidacion.value = '';
+    correoContactoValidacion.value = '';
+
   });
 
 /*
