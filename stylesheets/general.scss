@@ -230,7 +230,7 @@ nav {
   width: 28%;
   position: absolute;
   right: 0;
-  background-image: url('../assets/Tunnel-Liner-768x1024.jpg');
+  background-image: url('./assets/Tunnel-Liner-768x1024.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -297,4 +297,19 @@ footer {
 .services-list__item--title-vertical--title {
   text-align: center;
   margin-top: 1em;
+}
+
+.service-selected__description {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 3em;
+}
+
+.slide__services {
+  margin-top: 11em;
+
+  .slider-many-items--item {
+    margin: 0em 1em;
+  }
 }
