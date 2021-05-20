@@ -13,11 +13,3 @@
   firebase.initializeApp(firebaseConfig);
 
   var db = firebase.firestore();
-
-
-
-/*   const dbRef = firebase.database().ref();
-  const usersRef = dbRef.child('cotizacion-web');
-  console.log('userRef', usersRef) */
-/*   const dbRef = firebase.database('cotizacion-web');
-  console.log('dbRef', dbRef) */

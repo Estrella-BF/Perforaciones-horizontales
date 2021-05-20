@@ -22,13 +22,7 @@ if (quotationContainer) {
     quotation();
   }
 }
-/* console.log(`db.collection("cotizacion-web"): ${db.collection("cotizacion-web")}`);
-db.collection("cotizacion-web").get().then((querySnapshot) => {
-  console.log(`querySnapshot: ${querySnapshot}`);
-  querySnapshot.forEach((doc) => {
-      console.log(`${JSON.stringify(doc)}`);
-  });
-});  */
+
 function contactBtn(event){
 
   const nameValidation = document.getElementById('nameValidation');
@@ -66,21 +60,8 @@ async function sendFormQuotation(event) {
   const correoContactoValue = correoContactoValidacion.value;
 
   if (servicioValue && proyectoValue && rucValue && nombreContactoValue && numeroContactoValue && correoContactoValue) {
-    console.log('proyectoValidacion', proyectoValidacion)  
-    console.log('proyectoValue', proyectoValue)
-    console.log('rucValue', rucValue)
-    console.log('nombreContactoValue', nombreContactoValue)
-    console.log('numeroContactoValue', numeroContactoValue)
-    console.log({
-      servicio: servicioValue,
-      proyecto: proyectoValue,
-      ruc: rucValue,
-      nombre: nombreContactoValue,
-      numero: numeroContactoValue,
-      correo: correoContactoValue
-    })
     event.preventDefault();
-   await setQuotationDB(servicioValue, proyectoValue, rucValue, nombreContactoValue, numeroContactoValue, correoContactoValue);
+    await setQuotationDB(servicioValue, proyectoValue, rucValue, nombreContactoValue, numeroContactoValue, correoContactoValue);
   }
 }
 
@@ -94,13 +75,11 @@ const setQuotationDB = (servicio, proyecto, ruc, nombre, numero, correo) =>
     correo
   });
 
-
-  /*
-  Verificará la posición del scroll del navegador, y pasará como
-  parámetro el scroll del elemento
-  Funcionalidad para cuando el scroll baje el menu se quede fijo
-  */
-
+/*
+Verificará la posición del scroll del navegador, y pasará como
+parámetro el scroll del elemento
+Funcionalidad para cuando el scroll baje el menu se quede fijo
+*/
 if (main) {
   const mainPosition = main.offsetTop;
   const setClassScrollPosition = function (scrollPosition) {
