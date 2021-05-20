@@ -22,7 +22,13 @@ if (quotationContainer) {
     quotation();
   }
 }
-
+/* console.log(`db.collection("cotizacion-web"): ${db.collection("cotizacion-web")}`);
+db.collection("cotizacion-web").get().then((querySnapshot) => {
+  console.log(`querySnapshot: ${querySnapshot}`);
+  querySnapshot.forEach((doc) => {
+      console.log(`${JSON.stringify(doc)}`);
+  });
+});  */
 function contactBtn(event){
 
   const nameValidation = document.getElementById('nameValidation');
@@ -39,21 +45,55 @@ function contactBtn(event){
     event.preventDefault();
 
     const comentarios = comentariosValue ? `%0a%0aComentarios:%20${comentariosValue}` : '';
-
-  console.log(`db.collection("cotizacion-web"): ${db.collection("cotizacion-web")}`);
-  db.collection("cotizacion-web").get().then((querySnapshot) => {
-    console.log(`querySnapshot: ${JSON.stringify()(querySnapshot)}`);
-    querySnapshot.forEach((doc) => {
-        console.log(`${doc}`);
-    });
-  }); 
     window.open(`${urlWhatsapp}%0aNombre:%20${nameValue}%0a%0aNúmero%20de%20teléfono:%20${phoneNumber}%0a%0aCorreo%20Electrónico:%20${email}${comentarios}`);
   }   
 }
 
-function formQuotation(event) {
-  
+async function sendFormQuotation(event) {
+  // form quotation
+  const servicioValidacion = document.getElementById('servicioValidacion');
+  const proyectoValidacion = document.getElementById('proyectoValidacion');
+  const rucValidacion = document.getElementById('rucValidacion');
+  const nombreContactoValidacion = document.getElementById('nombreContactoValidacion');
+  const numeroContactoValidacion = document.getElementById('numeroContactoValidacion');
+  const correoContactoValidacion = document.getElementById('correoContactoValidacion');
+
+  const servicioValue = servicioValidacion.value;
+  const proyectoValue = proyectoValidacion.value;
+  const rucValue = rucValidacion.value;
+  const nombreContactoValue = nombreContactoValidacion.value;
+  const numeroContactoValue = numeroContactoValidacion.value;
+  const correoContactoValue = correoContactoValidacion.value;
+
+  if (servicioValue && proyectoValue && rucValue && nombreContactoValue && numeroContactoValue && correoContactoValue) {
+    console.log('proyectoValidacion', proyectoValidacion)  
+    console.log('proyectoValue', proyectoValue)
+    console.log('rucValue', rucValue)
+    console.log('nombreContactoValue', nombreContactoValue)
+    console.log('numeroContactoValue', numeroContactoValue)
+    console.log({
+      servicio: servicioValue,
+      proyecto: proyectoValue,
+      ruc: rucValue,
+      nombre: nombreContactoValue,
+      numero: numeroContactoValue,
+      correo: correoContactoValue
+    })
+    event.preventDefault();
+   await setQuotationDB(servicioValue, proyectoValue, rucValue, nombreContactoValue, numeroContactoValue, correoContactoValue);
+  }
 }
+
+const setQuotationDB = (servicio, proyecto, ruc, nombre, numero, correo) => 
+  db.collection('cotizaciones-web').doc().set({
+    servicio,
+    proyecto,
+    ruc,
+    nombre,
+    numero,
+    correo
+  });
+
 
   /*
   Verificará la posición del scroll del navegador, y pasará como
