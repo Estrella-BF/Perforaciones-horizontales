@@ -520,182 +520,211 @@
 
             <form class="form">
               <div class="col-md-12">
-                <label for="validationServer01" class="form-label col-md-2">Servicio a instalar:</label>
-                <select class="form-select" id="validationServer01" name="" id="">
+                <label for="servicioValidacion" class="form-label col-md-2">Servicio a instalar:</label>
+                <select class="form-select" id="servicioValidacion" name="" required>
                   <option value="">Seleccionar</option>
-                  <option value="">Opción A</option>
-                  <option value="">Opción B</option>
+                  <option value="opcionA">Opción A</option>
+                  <option value="opcionB">Opción B</option>
                 </select>
               </div>
 
-              <div class="col-md-12">
-                <label for="validationServer02" class="form-label col-md-2">Ubicación del proyecto:</label>
-                <input type="text" class="form-control" id="validationServer02" value="" required>
+              <div class="col-md-12 only-desktop">
+                <div class="quotation-img">
+                  <input class="input--deep position-absolute" type="text" name="" id="profundidadTValidacion" placeholder="PROFUNDIDAD (M)" required>
+                  <input class="input--length position-absolute" type="text" name="" id="longitudTValidacion" placeholder="LONGITUD (M)" required>
+                  <div class="position-absolute diameter">
+                    <div class="mb-0 d-flex">
+                      <input class="input--diameter" type="text" name="" id="diametroTValidacion" placeholder="DIÁMETRO DE TUBERÍA" required>
+                      <select class="m-0" name="" id="unidadDiametroTValidacion" required>
+                        <option value="">UNIDAD</option>
+                        <option value="opcionA">CM</option>
+                        <option value="opcionB">PULGADAS</option>
+                      </select>
+                    </div>
+             
+                  </div>
+                  <img src="./assets/quotation.jpeg" alt="cotizacion" class="img-fluid">
+                  <br>
+                  <br>
+                </div>
+
+              </div>
+
+              <div class="col-md-12 only-mobile">
+                <label for="profundidadTValidacion" class="form-label col-md-2">Profundidad de la tubería:</label>
+                <input type="text" class="form-control" id="profundidadTValidacion" value="" required>
+              </div>
+              
+              <div class="col-md-12 only-mobile">
+                <label for="diametroTValidacion" class="form-label col-md-2">Diámetro de tubería:</label>
+                <input type="text" class="form-control" id="diametroTValidacion" value="" required>
+              </div>
+
+              <div class="col-md-12 only-mobile">
+                <label for="unidadDiametroTValidacion" class="form-label col-md-2">Unidad diámetro de tubería:</label>
+                <select class="form-select" id="unidadDiametroTValidacion" name="" required>
+                  <option value="">Seleccionar</option>
+                  <option value="opcionA">CM</option>
+                  <option value="opcionB">PULGADAS</option>
+                </select>
+              </div>     
+              
+              <div class="col-md-12 only-mobile">
+                <label for="longitudTValidacion" class="form-label col-md-2">Longitud de tubería:</label>
+                <input type="text" class="form-control" id="longitudTValidacion" value="" required>
               </div>
 
               <div class="col-md-12">
-                <label for="validationServer03" class="form-label">
-                  Google maps de la ubicación del proyecto:
-                </label>
+                <label for="proyectoValidacion" class="form-label col-md-2">Ubicación del proyecto:</label>
+                <input type="text" class="form-control" id="proyectoValidacion" value="" required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="rucValidacion" class="form-label col-md-2">RUC o DNI:</label>
+                <input type="text" class="form-control" id="rucValidacion" value="" required>
               </div>
   
               <div class="col-md-12">
-                <label for="validationServer04" class="form-label col-md-2">RUC o DNI:</label>
-                <input type="text" class="form-control" id="validationServer04" value="" required>
+                <label for="nombreContactoValidacion" class="form-label col-md-2">Nombre del contacto:</label>
+                <input type="text" class="form-control" id="nombreContactoValidacion" value="" required>
               </div>
   
               <div class="col-md-12">
-                <label for="validationServer05" class="form-label col-md-2">Nombre del contacto:</label>
-                <input type="text" class="form-control" id="validationServer05" value="" required>
+                <label for="numeroContactoValidacion" class="form-label col-md-2">Número del contacto:</label>
+                <input type="text" class="form-control" id="numeroContactoValidacion" value="" required>
               </div>
   
               <div class="col-md-12">
-                <label for="validationServer06" class="form-label col-md-2">Número del contacto:</label>
-                <input type="text" class="form-control" id="validationServer06" value="" required>
+                <label for="correoContactoValidacion" class="form-label col-md-2">Correo del contacto:</label>
+                <input type="text" class="form-control" id="correoContactoValidacion" value="" required>
               </div>
-  
-              <div class="col-md-12">
-                <label for="validationServer07" class="form-label col-md-2">Correo del contacto:</label>
-                <input type="text" class="form-control" id="validationServer07" value="" required>
-              </div>
-<!-- 
-              <div class="col-md-12">
-                <label for="validationServer02" class="form-label">Last name</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="validationServerUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                  <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-              </div> -->
 
               <div class="col-12">
                 <div class="text-center">
-                  <button class="btn bk-black-white button-zoom-out d-inline-block" type="submit">Enviar</button>
+                  <button 
+                  class="btn bk-black-white button-zoom-out d-inline-block" type="submit"
+                  onclick="sendFormQuotation(event)"
+                  >Enviar</button>
                 </div>
               </div>
+              
             </form>
-<!--             <div class="form">
-              <div>
-                <label for="install-service">Servicio a instalar: </label>
-                <select name="" id="install-service">
-                  <option value="1">Servicio A</option>
-                  <option value="1">Servicio B</option>
-                </select>
-              </div>
-            </div> -->
 
           </div>
         </div>
       </div>
     </div>
-  
+
   </div>
   <!--End Quotation-->
 
-    <!--Contact us-->
-    <div class="contact-us" id="contact-us">
-      <div class="container">
-        <div class="row">
-    
-          <div class="lateral-background only-desktop"></div>
-    
-          <div class="col-md-9">
-            <div class="title-section mb-0">
-              <div class="title-section__title">
-                <h2 class="title-section__title--text text-left">Contáctenos</h2>
-                <div class="title-section__title--bar"></div>
-              </div>
-            </div>
 
-            <div class="contact-us--description">
-              <div>Estamos disponibles para ayudarle de lunes a sábado 8:00  am hasta  7:00 pm. </div>
-              <div>Teléfono: (+51) 983 558 207 </div>
-              <div>Correo: comercial@perforacioneshorizontales.pe</div>
-              <div>Dirección: Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</div>
+  <!--Contact us-->
+  <div class="contact-us" id="contact-us">
+    <div class="container">
+      <div class="row">
+  
+        <div class="lateral-background only-desktop"></div>
+  
+        <div class="col-md-9">
+          <div class="title-section mb-0">
+            <div class="title-section__title">
+              <h2 class="title-section__title--text text-left">Contáctenos</h2>
+              <div class="title-section__title--bar"></div>
             </div>
-
-            <form class="form">
-    
-              <div class="col-md-12">
-                <label for="validationContact01" class="form-label col-md-2">Nombre:</label>
-                <input type="text" class="form-control" id="validationContact01" value="" required>
-              </div>
-    
-              <div class="col-md-12">
-                <label for="validationContact02" class="form-label col-md-2">Número de teléfono:</label>
-                <input type="text" class="form-control" id="validationContact02" value="" required>
-              </div>
-    
-              <div class="col-md-12">
-                <label for="validationContact03" class="form-label col-md-2">Correo electrónico:</label>
-                <input type="text" class="form-control" id="validationContact03" value="" required>
-              </div>
-    
-              <div class="col-12">
-                <div class="text-center">
-                  <button class="btn bk-black-white button-zoom-out d-inline-block" type="submit">Enviar</button>
-                </div>
-              </div>
-            </form>
           </div>
-    
+
+          <div class="contact-us--description">
+            <div>Estamos disponibles para ayudarle de lunes a sábado 8:00  am hasta  7:00 pm. </div>
+            <div>Teléfono: (+51) 983 558 207 </div>
+            <div>Correo: comercial@perforacioneshorizontales.pe</div>
+            <div>Dirección: Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</div>
+          </div>
+
+          <form class="form">
+  
+            <div class="col-md-12">
+              <label for="nameValidation" class="form-label col-md-2">Nombre:</label>
+              <input type="text" class="form-control" id="nameValidation" value="" required>
+            </div>
+  
+            <div class="col-md-12">
+              <label for="phoneNumberValidation" class="form-label col-md-2">Número de teléfono:</label>
+              <input type="text" class="form-control" id="phoneNumberValidation" value="" required>
+            </div>
+  
+            <div class="col-md-12">
+              <label for="emailValidation" class="form-label col-md-2">Correo electrónico:</label>
+              <input type="text" class="form-control" id="emailValidation" value="" required>
+            </div>
+  
+            <div class="col-md-12">
+              <label for="comentarioValidation" class="form-label col-md-2">Comentarios:</label>
+              <textarea class="form-control" name="" id="comentarioValidation" cols="5" rows="5"></textarea>
+            </div>
+  
+            <div class="col-12">
+              <div class="text-center">
+                <button 
+                class="btn bk-black-white button-zoom-out d-inline-block" type="submit"
+                onclick="contactBtn(event)"
+                >Enviar</button>
+              </div>
+            </div>
+          </form>
         </div>
+  
       </div>
+    </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="separator light"></div>
-            <h4>Síguenos en las redes sociales:</h4>
-            <div class="contact-us__social-network">
-    
-              <div class="social-networks">
-                <div class="social-networks__icons">
-                  <img src="./assets/Social-Media-Icons-1.png" alt="" class="img-fluid">
-                </div>
-            
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="separator light"></div>
+          <h4>Síguenos en las redes sociales:</h4>
+          <div class="contact-us__social-network">
+  
+            <div class="social-networks">
+              <div class="social-networks__icons">
+                <img src="./assets/Social-Media-Icons-1.png" alt="" class="img-fluid">
               </div>
-
+           
             </div>
+
           </div>
-    
-          <div class="col-md-8">
-            <div class="separator light"></div>
-            <h4 class="mb-0">O visítanos:</h4>
-            <p class="mt-2 mb-2">Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
-            <div class="map">
+        </div>
+  
+        <div class="col-md-8">
+          <div class="separator light"></div>
+          <h4 class="mb-0">O visítanos:</h4>
+          <p class="mt-2 mb-2">Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+          <div class="map">
 
-              <div id="map"></div>
+            <div id="map"></div>
 
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--End Contact us-->
+  </div>
+  <!--End Contact us-->
 
-    <!--Footer-->
-    <footer>
-      <div class="w-100 text-center pb-4 pt-4">
-        Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú
-      </div>
-      <div class="w-100 text-center pb-4 pt-4">
-        Copyright © 2021, Perforaciones Horizontales
-      </div>
-    </footer>
-    <!--End Footer-->
 
-    <!--WhatsApp float-->  
-    <div id="WAButton"></div>  
+  <!--WhatsApp float-->  
+  <div id="WAButton"></div>  
+
+
+  <!--Footer-->
+  <footer>
+    <div class="w-100 text-center pb-4 pt-4">
+      Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú
+    </div>
+    <div class="w-100 text-center pb-4 pt-4">
+      Copyright © 2021, Perforaciones Horizontales
+    </div>
+  </footer>
+  <!--End Footer-->
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
