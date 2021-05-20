@@ -79,13 +79,13 @@ async function sendFormQuotation(event) {
     ) {
     event.preventDefault();
     const servicioKeyValue = `%0aServicio:%20${servicioValue}`;
-    const proyectoKeyValue = `%0aProyecto:%20${proyectoValue}`;
+    const proyectoKeyValue = `%0aUbicación%20del%20Proyecto:%20${proyectoValue}`;
     const rucKeyValue = `%0aRuc:%20${rucValue}`;
     const nombreKeyValue = `%0aNombre:%20${nombreContactoValue}`;
     const numeroKeyValue = `%0aNúmero:%20${numeroContactoValue}`;
     const correoKeyValue = `%0aCorreo:%20${correoContactoValue}`;
 
-    const profundidadKeyTValue = `%0aProfundidad de tubería:%20${profundidadTValue}`;
+    const profundidadKeyTValue = `%0aProfundidad%20de%20tubería:%20${profundidadTValue}`;
     const longitudKeyTValue = `%0aLongitud%20de%20tubería:%20${longitudTValue}%20${unidadDiametroTValue}`;
     const diametroKeyTValue = `%0aDiámetro:%20${diametroTValue}`;
 
