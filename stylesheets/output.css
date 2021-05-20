@@ -169,6 +169,34 @@
   margin-bottom: 4em;
 }
 
+.quotation-img {
+  position: relative;
+}
+.quotation-img .input--deep, .quotation-img .input--length {
+  width: 16% !important;
+}
+.quotation-img .input--diameter {
+  width: 50% !important;
+}
+.quotation-img .input--deep {
+  left: 8em;
+  top: 2em;
+}
+.quotation-img .input--length {
+  top: 51%;
+  left: 44%;
+}
+.quotation-img .diameter {
+  left: 10%;
+  top: 86%;
+}
+.quotation-img .diameter select {
+  width: 23%;
+}
+.quotation-img .diameter input {
+  width: 50%;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;

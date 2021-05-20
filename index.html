@@ -672,11 +672,32 @@
             <form class="form">
               <div class="col-md-12">
                 <label for="servicioValidacion" class="form-label col-md-2">Servicio a instalar:</label>
-                <select class="form-select" id="servicioValidacion" name="">
+                <select class="form-select" id="servicioValidacion" name="" required>
                   <option value="">Seleccionar</option>
                   <option value="opcionA">Opción A</option>
                   <option value="opcionB">Opción B</option>
                 </select>
+              </div>
+
+              <div class="col-md-12">
+                <div class="quotation-img">
+                  <input class="input--deep position-absolute" type="text" name="" id="deepValidacion" placeholder="PROFUNDIDAD (M)" required>
+                  <input class="input--length position-absolute" type="text" name="" id="lengthValidacion" placeholder="LONGITUD (M)" required>
+                  <div class="position-absolute diameter">
+                    <div class="mb-0 d-flex">
+                      <input class="input--diameter" type="text" name="" id="" placeholder="DIÁMETRO DE TUBERÍA" required>
+                      <select class="m-0" name="" id="" required>
+                        <option value="">UNIDAD</option>
+                        <option value="opcionA">CM</option>
+                        <option value="opcionB">PULGADAS/option>
+                      </select>
+                    </div>
+             
+                  </div>
+                  <img src="./assets/quotation.jpeg" alt="cotizacion" class="img-fluid">
+                </div>
+                <br>
+                <br>
               </div>
 
               <div class="col-md-12">
@@ -709,24 +730,6 @@
                 <label for="correoContactoValidacion" class="form-label col-md-2">Correo del contacto:</label>
                 <input type="text" class="form-control" id="correoContactoValidacion" value="" required>
               </div>
-<!-- 
-              <div class="col-md-12">
-                <label for="validationServer02" class="form-label">Last name</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="validationServerUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                  <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-              </div> -->
 
               <div class="col-12">
                 <div class="text-center">
@@ -738,15 +741,6 @@
               </div>
               
             </form>
-<!--             <div class="form">
-              <div>
-                <label for="install-service">Servicio a instalar: </label>
-                <select name="" id="install-service">
-                  <option value="1">Servicio A</option>
-                  <option value="1">Servicio B</option>
-                </select>
-              </div>
-            </div> -->
 
           </div>
         </div>

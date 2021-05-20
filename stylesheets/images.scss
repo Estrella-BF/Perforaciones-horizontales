@@ -57,10 +57,6 @@
   }
 }
 
-.slider__text-vertical {
-
-}
-
 .slider__text-vertical--title {
   text-align: center;
   margin: 0.4em;
@@ -85,4 +81,41 @@
 .slider-many-items--item {
   margin: 0em 4em;
   margin-bottom: 4em;
+}
+
+.quotation-img {
+  position: relative;
+
+  .input--deep, .input--length {
+    width: 16% !important;
+  }
+
+  .input--diameter {
+    width: 50% !important;
+  }
+
+  .input--deep {
+    left: 8em;
+    top: 2em;
+  }
+
+  .input--length {
+    top: 51%;
+    left: 44%;
+ 
+  }
+
+  .diameter {
+    left: 10%;
+    top: 86%;
+
+    select {
+      width: 23%;
+    }
+
+    input {
+      width: 50%;
+    }
+  }
+
 }
