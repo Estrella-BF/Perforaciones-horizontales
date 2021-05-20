@@ -40,10 +40,20 @@ function contactBtn(event){
 
     const comentarios = comentariosValue ? `%0a%0aComentarios:%20${comentariosValue}` : '';
 
+  console.log(`db.collection("cotizacion-web"): ${db.collection("cotizacion-web")}`);
+  db.collection("cotizacion-web").get().then((querySnapshot) => {
+    console.log(`querySnapshot: ${JSON.stringify()(querySnapshot)}`);
+    querySnapshot.forEach((doc) => {
+        console.log(`${doc}`);
+    });
+  }); 
     window.open(`${urlWhatsapp}%0aNombre:%20${nameValue}%0a%0aNúmero%20de%20teléfono:%20${phoneNumber}%0a%0aCorreo%20Electrónico:%20${email}${comentarios}`);
   }   
 }
 
+function formQuotation(event) {
+  
+}
 
   /*
   Verificará la posición del scroll del navegador, y pasará como

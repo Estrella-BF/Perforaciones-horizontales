@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://gitlab.com/Estrella-BF/perforaciones-horizontales/issues"
   },
-  "homepage": "https://gitlab.com/Estrella-BF/perforaciones-horizontales#readme"
+  "homepage": "https://gitlab.com/Estrella-BF/perforaciones-horizontales#readme",
+  "dependencies": {}
 }
