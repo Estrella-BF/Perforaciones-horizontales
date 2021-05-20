@@ -90,10 +90,6 @@
     width: 16% !important;
   }
 
-  .input--diameter {
-    width: 50% !important;
-  }
-
   .input--deep {
     left: 8em;
     top: 2em;
@@ -102,7 +98,6 @@
   .input--length {
     top: 51%;
     left: 44%;
- 
   }
 
   .diameter {
@@ -110,11 +105,12 @@
     top: 86%;
 
     select {
-      width: 23%;
+      color: $dark-gray;
+      width: 26% !important;
     }
 
     input {
-      width: 50%;
+      width: 58% !important;
     }
   }
 

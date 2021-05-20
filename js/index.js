@@ -130,10 +130,10 @@ const setQuotationDB = ({servicio, proyecto, ruc, nombre, numero, correo, profun
     nombreContactoValidacion.value = '';
     numeroContactoValidacion.value = '';
     correoContactoValidacion.value = '';
-    profundidadTValue.value = '';
-    longitudTValue.value = '';
-    diametroTValue.value = '';
-    unidadDiametroTValue.value = '';
+    profundidadTValidacion.value = '';
+    longitudTValidacion.value = '';
+    diametroTValidacion.value = '';
+    unidadDiametroTValidacion.value = '';
   });
 
 /*

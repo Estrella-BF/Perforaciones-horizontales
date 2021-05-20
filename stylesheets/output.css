@@ -175,9 +175,6 @@
 .quotation-img .input--deep, .quotation-img .input--length {
   width: 16% !important;
 }
-.quotation-img .input--diameter {
-  width: 50% !important;
-}
 .quotation-img .input--deep {
   left: 8em;
   top: 2em;
@@ -191,10 +188,11 @@
   top: 86%;
 }
 .quotation-img .diameter select {
-  width: 23%;
+  color: #757575;
+  width: 26% !important;
 }
 .quotation-img .diameter input {
-  width: 50%;
+  width: 58% !important;
 }
 
 * {
