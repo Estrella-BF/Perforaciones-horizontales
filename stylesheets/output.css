@@ -314,8 +314,17 @@ nav {
   display: inline-block;
 }
 
+.title-section__title--text.white {
+  color: white;
+  text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.71);
+}
+
 .title-section__title--bar {
   outline: 1px solid;
+}
+.title-section__title--bar.white {
+  color: white;
+  text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.71);
 }
 
 .quotation {
@@ -505,6 +514,20 @@ footer {
   margin: 0em 1em;
 }
 
+.bk-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)), url(../assets/Tunnel-Liner-768x1024.jpg);
+  /*   background-image: linear-gradient(
+      rgba(255, 0, 0, 0.3), 
+      rgba(255, 0, 0, 0.3)
+    ),
+    url('../assets/Tunnel-Liner-768x1024.jpg');  */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position-y: center !important;
+  height: 17em;
+  margin-bottom: 3em;
+}
+
 .header .navbar {
   padding-top: 1em;
   z-index: 1;
@@ -516,6 +539,7 @@ footer {
   padding-right: 0.2rem !important;
 }
 .header .header__nav--white {
+  background-color: white;
   -webkit-box-shadow: 0px 5px 15px 5px #000000;
   box-shadow: 0px -5px 12px 5px #000000;
 }
