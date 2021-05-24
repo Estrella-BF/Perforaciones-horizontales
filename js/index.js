@@ -90,7 +90,7 @@ async function sendFormQuotation(event) {
     const longitudKeyTValue = `%0aLongitud%20de%20tubería:%20${longitudTValue}%20${unidadDiametroTValue}`;
     const diametroKeyTValue = `%0aDiámetro:%20${diametroTValue}m`;
 
-    const text = `${servicioKeyValue}${title}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
+    const text = `${title}${servicioKeyValue}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
 
     window.open(`${urlWhatsapp}${text}`);
 
