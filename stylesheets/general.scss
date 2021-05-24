@@ -249,7 +249,7 @@ nav {
   width: 28%;
   position: absolute;
   right: 0;
-  background-image: url('../assets/images/workers-sub-3.jpg');
+  background-image: url('../assets/images/workers-sub-3-medium.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -353,7 +353,14 @@ footer {
 }
 
 .bk-services {
-  background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 65%)), url(../assets/Tunnel-Liner-768x1024.jpg);
+  background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 65%)), url(../local-assets/images/tunel-tierra-3.JPG);
+}
+
+.bk-company {
+  background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 65%)), url(../local-assets/images/tunel-tierra-3.JPG);
+}
+
+.bk-company, .bk-services {
 /*   background-image: linear-gradient(
     rgba(255, 0, 0, 0.3), 
     rgba(255, 0, 0, 0.3)
