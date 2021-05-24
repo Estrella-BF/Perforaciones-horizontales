@@ -39,7 +39,7 @@ function contactBtn(event){
     event.preventDefault();
 
     const comentarios = comentariosValue ? `%0a%0aComentarios:%20${comentariosValue}` : '';
-    window.open(`${urlWhatsapp}%0aNombre:%20${nameValue}%0a%0aNúmero%20de%20teléfono:%20${phoneNumber}%0a%0aCorreo%20Electrónico:%20${email}${comentarios}`);
+    window.open(`${urlWhatsapp}MENSAJE%20EN%20CONTACTENOS%20POR%20LA%20PAGINA%20WEB%0a%0aNombre:%20${nameValue}%0a%0aNúmero%20de%20teléfono:%20${phoneNumber}%0a%0aCorreo%20Electrónico:%20${email}${comentarios}`);
   }   
 }
 
@@ -78,6 +78,7 @@ async function sendFormQuotation(event) {
     && longitudTValue && diametroTValue && unidadDiametroTValue
     ) {
     event.preventDefault();
+    const title = `SOLICITUD%20DE%20COTIZACION%20POR%20LA%20PAGINA%20WEB%0a`;
     const servicioKeyValue = `%0aServicio:%20${servicioValue}`;
     const proyectoKeyValue = `%0aUbicación%20del%20Proyecto:%20${proyectoValue}`;
     const rucKeyValue = `%0aRuc:%20${rucValue}`;
@@ -89,7 +90,7 @@ async function sendFormQuotation(event) {
     const longitudKeyTValue = `%0aLongitud%20de%20tubería:%20${longitudTValue}%20${unidadDiametroTValue}`;
     const diametroKeyTValue = `%0aDiámetro:%20${diametroTValue}`;
 
-    const text = `${servicioKeyValue}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
+    const text = `${servicioKeyValue}${title}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
 
     window.open(`${urlWhatsapp}${text}`);
 
