@@ -86,9 +86,9 @@ async function sendFormQuotation(event) {
     const numeroKeyValue = `%0aNúmero:%20${numeroContactoValue}`;
     const correoKeyValue = `%0aCorreo:%20${correoContactoValue}`;
 
-    const profundidadKeyTValue = `%0aProfundidad%20de%20tubería:%20${profundidadTValue}`;
+    const profundidadKeyTValue = `%0aProfundidad%20de%20tubería:%20${profundidadTValue}m`;
     const longitudKeyTValue = `%0aLongitud%20de%20tubería:%20${longitudTValue}%20${unidadDiametroTValue}`;
-    const diametroKeyTValue = `%0aDiámetro:%20${diametroTValue}`;
+    const diametroKeyTValue = `%0aDiámetro:%20${diametroTValue}m`;
 
     const text = `${servicioKeyValue}${title}${proyectoKeyValue}${profundidadKeyTValue}${longitudKeyTValue}${diametroKeyTValue}${rucKeyValue}${nombreKeyValue}${numeroKeyValue}${correoKeyValue}`;
 
