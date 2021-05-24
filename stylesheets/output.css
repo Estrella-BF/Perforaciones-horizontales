@@ -543,6 +543,7 @@ footer {
 .services-list__item {
   cursor: pointer;
   margin: 3em;
+  width: 25%;
 }
 @media (max-width: 767.98px) {
   .services-list__item {
