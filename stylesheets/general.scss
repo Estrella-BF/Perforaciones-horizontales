@@ -234,7 +234,13 @@ nav {
 
   .social-networks__icons {
     display: inline-block;
-    width: 50%;
+    font-size: 4rem;
+    margin: 0 0.3em;
+
+    a {
+      cursor: pointer;
+      display: contents;
+    }
   }
 }
 

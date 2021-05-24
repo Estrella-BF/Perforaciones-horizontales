@@ -214,3 +214,6 @@ function servicioSelected(id) {
   }
 }
 
+function iconWhatsapp() {
+  window.open(`${urlWhatsapp}Hola,%20quisiera%20conversar%20con%20un%20asesor`);
+}

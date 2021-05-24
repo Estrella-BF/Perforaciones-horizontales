@@ -42,10 +42,6 @@
   background-color: black;
 }
 
-.color-black {
-  color: black !important;
-}
-
 .bk-white {
   background-color: white;
 }
@@ -61,16 +57,36 @@
 
 .bk-transparent {
   background-color: transparent;
+}
+
+.color-black {
+  color: black !important;
+}
+
+.icon-facebook {
+  color: #1298f5 !important;
+}
+
+.icon-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-youtube {
+  color: #f24423;
+}
+
+.icon-whatsapp {
+  color: #69d857;
 }
 
 .bk-black {
   background-color: black;
 }
 
-.color-black {
-  color: black !important;
-}
-
 .bk-white {
   background-color: white;
 }
@@ -86,6 +102,30 @@
 
 .bk-transparent {
   background-color: transparent;
+}
+
+.color-black {
+  color: black !important;
+}
+
+.icon-facebook {
+  color: #1298f5 !important;
+}
+
+.icon-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-youtube {
+  color: #f24423;
+}
+
+.icon-whatsapp {
+  color: #69d857;
 }
 
 .slider-indicator__dots button {
@@ -408,7 +448,12 @@ nav {
 }
 .social-networks .social-networks__icons {
   display: inline-block;
-  width: 50%;
+  font-size: 4rem;
+  margin: 0 0.3em;
+}
+.social-networks .social-networks__icons a {
+  cursor: pointer;
+  display: contents;
 }
 
 .lateral-background {
