@@ -74,13 +74,14 @@
 .slider-many-items {
   display: flex;
   margin-bottom: 2em;
-  align-items: flex-end;
+/*   align-items: flex-end; */
   justify-content: center;
 }
 
 .slider-many-items--item {
   margin: 0em 4em;
   margin-bottom: 4em;
+  width: 25%;
 }
 
 .quotation-img {

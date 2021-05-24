@@ -58,6 +58,17 @@ nav {
   }
 }
 
+.border-bottom {
+  &.white {
+    border-bottom: 1px solid white;
+  }
+}
+
+.button-shadow {
+  -webkit-box-shadow: -2px 2px 8px 2px #00000052;
+  box-shadow: -2px 2px 8px 2px #00000052;
+}
+
 .separator {
   border: 1px solid black;
   margin: 2em 0;

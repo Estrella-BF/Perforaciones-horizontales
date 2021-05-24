@@ -24,71 +24,70 @@
 <body>
   
   <!--Header-->
-  <header class="header">
+  <header class="header header-shadow">
     <!--Navbar Desktop-->
     <nav class="navbar navbar-expand-lg only-desktop w-100 position-absolute">
-      <div class="container-fluid">
+      <div class="container-fluid border-bottom white">
 <!--         <div class="w-100 d-flex"> -->
-          <a class="navbar-brand w-15" href="#">
-            <div class="">
-              <img src="./assets/icons/logo-1.png" class="img-fluid">
-            </div>
-         
-<!--             <div class="nav-bar__text">
-              <p>(+51) 983 558 207 </p>
-              <p>comercial@perforacioneshorizontales.pe</p>
-              <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
-            </div> -->
-          </a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link active fw-bolder" aria-current="page" href="./index.html">Principal</a>
-              </li>
-              <div class="navbar--separator">|</div>
-              <li class="nav-item">
-                <a class="nav-link" href="./company.html">Empresa</a>
-              </li>
-              <div class="navbar--separator">|</div>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item color-black" href="./services.html">TUNNEL LINER</a></li>
-                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION HORIZONTAL DIRIGIDA</a></li>
-                  <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
-                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA RAMMING</a></li>
-                  <li><a class="dropdown-item color-black" href="./services.html">PERFORACION SISTEMA OUYER BORDING</a></li>
-                  <li><a class="dropdown-item color-black" href="./services.html">PIPER BUSTER</a></li>
-                </ul>
-              </li>
-              <div class="navbar--separator">|</div>
-  
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contáctenos</a>
-              </li>
-  
-              <li>
-                <div class="button-zoom-out quotation-button">
-                  <button 
-                  onclick="openQuotationForm()"
-                  class="btn btn-lg bk-white" type="button"
-                  > 
-                    Cotiza en un click
-                    <i class="fas fa-file-alt quotation-icon"></i>
-                  </button>
-                </div>
-                
-              </li>
-  
-            </ul>
-  
+        <a class="navbar-brand w-15 pb-3" href="#">
+          <div class="">
+            <img src="./assets/icons/logo-1.png" class="img-fluid">
           </div>
+        
+<!--             <div class="nav-bar__text">
+            <p>(+51) 983 558 207 </p>
+            <p>comercial@perforacioneshorizontales.pe</p>
+            <p>Calle Dean Valdivia 148 Platinum Plaza 1 of. 1115 – San Isidro - Lima – Perú</p>
+          </div> -->
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link nav-link-shadow active fw-bolder" aria-current="page" href="./index.html">Principal</a>
+            </li>
+            <div class="navbar--separator">|</div>
+            <li class="nav-item">
+              <a class="nav-link nav-link-shadow" href="./company.html">Empresa</a>
+            </li>
+            <div class="navbar--separator">|</div>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACIÓN HORIZONTAL DIRIGIDA</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PERFORACIÓN HORIZONTAL CON SISTEMA RAMMING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">CONSTRUCCIÓN TUNNEL LINER</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">AUGER BORING</a></li>
+                <li><a class="dropdown-item color-black" href="./services.html">PIPE BURSTING</a></li>
+              </ul>
+            </li>
+            <div class="navbar--separator">|</div>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-shadow" href="#contact-us">Contáctenos</a>
+            </li>
+
+            <li>
+              <div class="button-zoom-out quotation-button">
+                <button 
+                onclick="openQuotationForm()"
+                class="btn btn-lg bk-white button-shadow" type="button"
+                > 
+                  Cotiza en un click
+                  <i class="fas fa-file-alt quotation-icon"></i>
+                </button>
+              </div>
+              
+            </li>
+
+          </ul>
+
+        </div>
  <!--        </div> -->
     
       </div>
@@ -275,7 +274,7 @@
           <div class="carousel-indicators slider-indicator__dots">
             <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!--   <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -287,7 +286,7 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">PERFORACIÓN HORIZONTAL DIRIGIDA</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
@@ -298,7 +297,7 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">PERFORACIÓN HORIZONTAL CON SISTEMA RAMMING</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
@@ -309,7 +308,7 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">CONSTRUCCIÓN TUNNEL LINER</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
@@ -327,7 +326,7 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">AUGER BORING</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
@@ -338,27 +337,17 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">PIPE BURSTING</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
                 </div>
     
-                <div class="slider-many-items--item">
-                  <div class="slider__img">
-                    <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
-                  </div>
-                  <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
-                    <div class="slider__text-vertical--line"></div>
-                    <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
-                  </div>
-                </div>
               </div>
     
             </div>
     
-            <div class="carousel-item">
+<!--             <div class="carousel-item">
               <div class="slider-many-items">
                 
                 <div class="slider-many-items--item">
@@ -366,36 +355,14 @@
                     <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
                   </div>
                   <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
+                    <h4 class="slider__text-vertical--title">TOPOS</h4>
                     <div class="slider__text-vertical--line"></div>
                     <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
                   </div>
                 </div>
     
-                <div class="slider-many-items--item">
-                  <div class="slider__img">
-                    <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
-                  </div>
-                  <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
-                    <div class="slider__text-vertical--line"></div>
-                    <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
-                  </div>
-                </div>
-    
-                <div class="slider-many-items--item">
-                  <div class="slider__img">
-                    <img src="./assets/images/worker-sun-1-small.jpg" class="d-block w-100" alt="servicios perforaciones horizontales">
-                  </div>
-                  <div class="slider__text-vertical">
-                    <h4 class="slider__text-vertical--title">Título anuncio 2</h4>
-                    <div class="slider__text-vertical--line"></div>
-                    <p class="slider__text-vertical--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta voluptatem praesentium impedit sed! Error, quas sit! Ea molestias voluptatum dolorum, esse tempora dolore sint, ut iste, ex vitae aliquam.</p>
-                  </div>
-                </div>
               </div>
-    
-            </div>
+            </div> -->
     
           </div>
 
