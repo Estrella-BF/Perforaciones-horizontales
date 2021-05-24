@@ -75,6 +75,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.icon-linkedin {
+  color: #0a66c2;
+}
+
 .icon-youtube {
   color: #f24423;
 }
@@ -118,6 +122,10 @@
   /* Also define standard property for compatibility */
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.icon-linkedin {
+  color: #0a66c2;
 }
 
 .icon-youtube {
