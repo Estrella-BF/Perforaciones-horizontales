@@ -264,6 +264,9 @@ footer {
   background-color: black;
   color: white;
 }
+footer a {
+  color: white;
+}
 
 input, select {
   display: inline-block !important;
